@@ -127,7 +127,7 @@ a {
   background-size: 100%;
 }
 .block-1__content {
-  padding-bottom: 10vh;
+  padding-bottom: calc(129.375px + 77.625 * (100vw - 1200px) / 720);
 }
 
 .header {
@@ -194,10 +194,12 @@ a {
 .socials-phone__phone {
   font-size: calc(15px + 9 * (100vw - 1200px) / 720);
   font-family: "MuseoSans700";
+  margin-bottom: calc(5.625px + 3.375 * (100vw - 1200px) / 720);
 }
 .socials-phone__button {
-  font-family: "MuseoSans100";
+  font-family: "MuseoSans300";
   font-size: calc(8.75px + 5.25 * (100vw - 1200px) / 720);
+  text-decoration: underline;
 }
 
 .block-1-content {
@@ -206,7 +208,7 @@ a {
   display: flex;
   font-size: calc(29.375px + 17.625 * (100vw - 1200px) / 720);
 }
-.block-1-content__text {
+.block-1-content__content-text {
   -webkit-box-flex: 1;
       -ms-flex: auto;
           flex: auto;
@@ -237,6 +239,7 @@ a {
   padding-top: calc(20px + 12 * (100vw - 1200px) / 720);
 }
 .block-1-content__text {
+  padding-top: calc(41.25px + 24.75 * (100vw - 1200px) / 720);
   font-family: "MuseoSans100";
   font-size: calc(15.625px + 9.375 * (100vw - 1200px) / 720);
 }
@@ -260,7 +263,7 @@ a {
   border-radius: calc(37.5px + 22.5 * (100vw - 1200px) / 720);
   -webkit-box-shadow: 0 20px 20px rgba(203, 63, 48, 0.3137254902);
           box-shadow: 0 20px 20px rgba(203, 63, 48, 0.3137254902);
-  border: 3px solid #fa7661;
+  border: calc(1.875px + 1.125 * (100vw - 1200px) / 720) solid #fa7661;
 }
 
 .socials-socials__item {
@@ -322,7 +325,7 @@ a {
     display: flex;
     font-size: calc(29.375px + 17.625 * (100vw - 320px) / 1600);
   }
-  .block-1-content__text {
+  .block-1-content__content-text {
     -webkit-box-flex: 1;
         -ms-flex: auto;
             flex: auto;
@@ -341,15 +344,16 @@ a {
   .block-1-content__title {
     font-family: "MuseoSans700";
     font-size: calc(18.75px + 11.25 * (100vw - 320px) / 1600);
-    padding-top: calc(3.125px + 1.875 * (100vw - 320px) / 1600);
+    padding-top: calc(12.5px + 7.5 * (100vw - 320px) / 1600);
   }
   .block-1-content__online {
     font-family: "MuseoSans500";
     font-size: calc(12.5px + 7.5 * (100vw - 320px) / 1600);
-    padding-top: calc(9.375px + 5.625 * (100vw - 320px) / 1600);
+    padding-top: calc(12.5px + 7.5 * (100vw - 320px) / 1600);
     color: #9e0e0c;
   }
   .block-1-content__text {
+    padding-top: calc(25px + 15 * (100vw - 320px) / 1600);
     font-family: "MuseoSans100";
     font-size: calc(11.25px + 6.75 * (100vw - 320px) / 1600);
   }
@@ -362,7 +366,7 @@ a {
   .block-1-content__button {
     font-family: "CenturyGothic";
     font-size: calc(11.25px + 6.75 * (100vw - 320px) / 1600);
-    padding-top: calc(37.5px + 22.5 * (100vw - 320px) / 1600);
+    padding-top: calc(50px + 30 * (100vw - 320px) / 1600);
   }
   .block-1-content__button a {
     border-radius: calc(37.5px + 22.5 * (100vw - 320px) / 1600);

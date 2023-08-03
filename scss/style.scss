@@ -93,7 +93,7 @@ a {
 		}
 
     &__content {
-      padding-bottom: 10vh;;
+      padding-bottom: adap(207);
     }
 }
 
@@ -166,11 +166,13 @@ a {
 		&__phone {
       font-size: adap(24);
       font-family: "MuseoSans700";
+      margin-bottom: adap(9);
 		}
 
 		&__button {
-      font-family: "MuseoSans100";
+      font-family: "MuseoSans300";
       font-size: adap(14);
+      text-decoration: underline;
 		}
 }
 
@@ -178,7 +180,7 @@ a {
   display: flex;
   font-size: adap(47);
 
-  &__text {
+  &__content-text {
     flex: auto;
     padding-left: adap(197);
   }
@@ -210,6 +212,7 @@ a {
   }
 
   &__text {
+    padding-top: adap(66);
     font-family: "MuseoSans100";
     font-size: adap(25);
     & p {
@@ -231,7 +234,7 @@ a {
       padding-right: adap(110);
       border-radius: adap(60);
       box-shadow: 0 20px 20px #cb3f3050;
-      border: 3px solid #fa7661;
+      border: adap(3) solid #fa7661;
     }
   }
 }
@@ -314,7 +317,7 @@ a {
     display: flex;
     font-size: adap(47, 320);
   
-    &__text {
+    &__content-text {
       flex: auto;
       // padding-left: adap(197, 320);
     }
@@ -335,17 +338,18 @@ a {
     &__title {
       font-family: "MuseoSans700";
       font-size: adap(30, 320);
-      padding-top: adap(5, 320);
+      padding-top: adap(20, 320);
     }
   
     &__online {
       font-family: "MuseoSans500";
       font-size: adap(20, 320);
-      padding-top: adap(15, 320);
+      padding-top: adap(20, 320);
       color: #9e0e0c;
     }
   
     &__text {
+      padding-top: adap(40, 320);
       font-family: "MuseoSans100";
       font-size: adap(18, 320);
       & p {
@@ -359,7 +363,7 @@ a {
     &__button {
       font-family: "CenturyGothic";
       font-size: adap(18, 320);
-      padding-top: adap(60, 320);
+      padding-top: adap(80, 320);
       & a {
         border-radius: adap(60, 320);
       }
