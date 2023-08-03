@@ -1,0 +1,411 @@
+// path to settings.json
+// C:\Users\acer\AppData\Roaming\Code\User
+// ширина моего окна - 1229 x 590
+
+@import "_nullstyle";
+
+@font-face {
+  font-family: 'CenturyGothic';
+  src: url('../fonts/CenturyGothic/CenturyGothic-Bold.eot');
+  src: url('../fonts/CenturyGothic/CenturyGothic-Bold.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/CenturyGothic/CenturyGothic-Bold.woff2') format('woff2'),
+      url('../fonts/CenturyGothic/CenturyGothic-Bold.woff') format('woff'),
+      url('../fonts/CenturyGothic/CenturyGothic-Bold.ttf') format('truetype'),
+      url('../fonts/CenturyGothic/') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat/Montserrat-Light.eot');
+  src: url('../fonts/Montserrat/Montserrat-Light.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Montserrat/Montserrat-Light.woff2') format('woff2'),
+      url('../fonts/Montserrat/Montserrat-Light.woff') format('woff'),
+      url('../fonts/Montserrat/Montserrat-Light.ttf') format('truetype'),
+      url('../fonts/Montserrat/Montserrat-Light.svg#Montserrat-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MuseoSans500';
+  src: url('../fonts/MuseoSans/../fonts/MuseoSans/MuseoSansCyrl-500.woff2') format('woff2'),
+      url('../fonts/MuseoSans/MuseoSansCyrl-500.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MuseoSans300';
+  src: url('../fonts/MuseoSans/MuseoSansCyrl-300.woff2') format('woff2'),
+      url('../fonts/MuseoSans/MuseoSansCyrl-300.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MuseoSans700';
+  src: url('../fonts/MuseoSans/MuseoSansCyrl-700.woff2') format('woff2'),
+      url('../fonts/MuseoSans/MuseoSansCyrl-700.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MuseoSans100';
+  src: url('../fonts/MuseoSans/MuseoSansCyrl-100.woff2') format('woff2'),
+      url('../fonts/MuseoSans/MuseoSansCyrl-100.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+@function res($pix) {
+  @return 0.625 * $pix; // 1200 / 1920
+}
+
+@function adap($pix, $width: 1200) {
+  @return calc(res($pix) * 1px + ($pix - res($pix)) * (100vw - $width * 1px) / (1920 - $width));
+}
+
+body {
+  color: #330f06;
+}
+
+a {
+  color: #330f06;
+}
+
+.wrapper {
+}
+.block-1 {
+  background: url(../img/block1/block-1-bg.png) repeat-x;
+  background-size: 100%;
+
+		&__header {
+		}
+
+    &__content {
+      padding-bottom: 10vh;;
+    }
+}
+
+
+.header {
+  font-size: adap(27);
+
+		&__body {
+      display: flex;
+		}
+
+		&__name {
+      flex: 1;
+		}
+
+		&__menu {
+      flex: 2;
+		}
+
+		&__socials {
+      flex: 1;
+		}
+}
+.header-name {
+
+		&__items {
+      padding-top: adap(15);
+      padding-left: adap(181);
+		}
+
+		&__name {
+      font-size: 1em;
+      font-family: "MuseoSans700";
+      display: inline-block;
+		}
+
+		&__prof {
+      display: inline-block;
+      font-size: adap(20);
+      font-family: "MuseoSans100";
+		}
+}
+
+.header-menu {
+  font-size: adap(18);
+  font-family: 'Montserrat';
+
+		&__body {
+      padding-top: adap(27);
+      padding-left: adap(200);
+		}
+
+		&__item {
+      display: inline-block;
+      margin-right: adap(52);
+      margin-bottom: adap(15);
+		}
+}
+.header-socials {
+  padding-top: adap(21);
+  text-align: right;
+
+
+		&__phone {
+      padding-right: adap(12);
+		}
+}
+.socials-phone {
+
+		&__phone {
+      font-size: adap(24);
+      font-family: "MuseoSans700";
+		}
+
+		&__button {
+      font-family: "MuseoSans100";
+      font-size: adap(14);
+		}
+}
+
+.block-1-content {
+  display: flex;
+  font-size: adap(47);
+
+  &__text {
+    flex: auto;
+    padding-left: adap(197);
+  }
+
+  &__socials {
+    flex: auto;
+    text-align: right;
+    padding-right: adap(141);
+    padding-top: adap(29);
+  }
+  
+  &__invite {
+    font-size: adap(47);
+    font-family: "MuseoSans500";
+    padding-top: adap(78);
+  }
+
+  &__title {
+    font-family: "MuseoSans700";
+    font-size: adap(52);
+    padding-top: adap(20);
+  }
+
+  &__online {
+    font-family: "MuseoSans500";
+    font-size: adap(28);
+    color: #9e0e0c;
+    padding-top: adap(32);
+  }
+
+  &__text {
+    font-family: "MuseoSans100";
+    font-size: adap(25);
+    & p {
+      margin-bottom: adap(30);
+    }
+  }
+
+  &__button {
+    font-family: "CenturyGothic";
+    font-size: adap(25);
+    padding-top: adap(117);
+    & a {
+      color: #fff;
+      background: rgb(165,36,32);
+      background: linear-gradient(0deg, rgba(165,36,32,1) 0%, rgba(238,94,69,1) 100%);
+      padding-top: adap(40);
+      padding-bottom: adap(40);
+      padding-left: adap(110);
+      padding-right: adap(110);
+      border-radius: adap(60);
+      box-shadow: 0 20px 20px #cb3f3050;
+      border: 3px solid #fa7661;
+    }
+  }
+}
+
+.socials-socials {
+
+		&__item {
+      margin-bottom: adap(19);
+      line-height: 0;
+      & img {
+        width: adap(20);
+      }
+		}
+}
+
+
+@media screen and (max-width: 1199px) {
+
+  .header {
+    font-size: adap(20, 320);
+  }
+
+  .header-name {
+  
+      &__items {
+        padding-top: adap(15, 320);
+        padding-left: adap(100, 320);
+      }
+  
+      &__name {
+        font-size: 1em;
+        font-family: "MuseoSans700";
+        display: inline-block;
+      }
+  
+      &__prof {
+        display: inline-block;
+        font-size: adap(20, 320);
+        font-family: "MuseoSans100";
+      }
+  }
+  
+  .header-menu {
+    font-size: adap(18, 320);
+    font-family: 'Montserrat';
+  
+      &__body {
+        padding-top: adap(27, 320);
+      }
+  
+      &__item {
+        display: inline-block;
+        margin-right: adap(52, 320);
+      }
+  }
+  .header-socials {
+    padding-top: adap(21);
+    text-align: right;
+  
+  
+      &__phone {
+        padding-right: adap(12, 320);
+        margin-bottom: adap(29, 320);
+      }
+  }
+  .socials-phone {
+  
+      &__phone {
+        font-size: adap(24, 320);
+        font-family: "MuseoSans700";
+      }
+  
+      &__button {
+        font-family: "MuseoSans100";
+        font-size: adap(14, 320);
+      }
+  }
+
+  .block-1-content {
+    display: flex;
+    font-size: adap(47, 320);
+  
+    &__text {
+      flex: auto;
+      // padding-left: adap(197, 320);
+    }
+  
+    &__socials {
+      flex: auto;
+      text-align: right;
+      // padding-right: adap(141, 320);
+      // padding-top: adap(29, 320);
+    }
+    
+    &__invite {
+      font-family: "MuseoSans500";
+      font-size: adap(25, 320);
+      padding-top: adap(50, 320);
+    }
+  
+    &__title {
+      font-family: "MuseoSans700";
+      font-size: adap(30, 320);
+      padding-top: adap(5, 320);
+    }
+  
+    &__online {
+      font-family: "MuseoSans500";
+      font-size: adap(20, 320);
+      padding-top: adap(15, 320);
+      color: #9e0e0c;
+    }
+  
+    &__text {
+      font-family: "MuseoSans100";
+      font-size: adap(18, 320);
+      & p {
+        margin-bottom: adap(15);
+        &:last-child {
+          margin: 0;
+        }
+      }
+    }
+  
+    &__button {
+      font-family: "CenturyGothic";
+      font-size: adap(18, 320);
+      padding-top: adap(60, 320);
+      & a {
+        border-radius: adap(60, 320);
+      }
+    }
+  }
+  
+  .socials-socials {
+  
+      &__item {
+        margin-bottom: adap(19, 320);
+        line-height: 0;
+        & img {
+          width: adap(20, 320);
+        }
+      }
+  }
+}
+
+@media screen and (max-width: 761px) {
+  
+  .block-1 {
+    background-size: auto 100%;
+  }
+
+  .header-name {
+  
+    &__items {
+      padding-top: adap(15, 320);
+      padding-left: adap(80, 320);
+    }
+  }
+}
+
+@media screen and (max-width: 389px) {
+  
+  .block-1 {
+    // background-size: 200%;
+    background-position: 50%;
+  }
+
+  .header-name {
+  
+    &__items {
+      padding-top: adap(15, 320);
+      padding-left: adap(10, 320);
+    }
+  }
+  
+}

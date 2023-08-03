@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Century Gothic';
+    src: url('../fonts/MuseoSans/CenturyGothic-Bold.eot');
+    src: url('../fonts/MuseoSans/CenturyGothic-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/MuseoSans/CenturyGothic-Bold.woff2') format('woff2'),
+        url('../fonts/MuseoSans/CenturyGothic-Bold.woff') format('woff'),
+        url('../fonts/MuseoSans/CenturyGothic-Bold.ttf') format('truetype'),
+        url('../fonts/MuseoSans/CenturyGothic-Bold.svg#CenturyGothic-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+

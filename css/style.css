@@ -1,0 +1,395 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+@font-face {
+  font-family: "CenturyGothic";
+  src: url("../fonts/CenturyGothic/CenturyGothic-Bold.eot");
+  src: url("../fonts/CenturyGothic/CenturyGothic-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/CenturyGothic/CenturyGothic-Bold.woff2") format("woff2"), url("../fonts/CenturyGothic/CenturyGothic-Bold.woff") format("woff"), url("../fonts/CenturyGothic/CenturyGothic-Bold.ttf") format("truetype"), url("../fonts/CenturyGothic/") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat/Montserrat-Light.eot");
+  src: url("../fonts/Montserrat/Montserrat-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat/Montserrat-Light.woff2") format("woff2"), url("../fonts/Montserrat/Montserrat-Light.woff") format("woff"), url("../fonts/Montserrat/Montserrat-Light.ttf") format("truetype"), url("../fonts/Montserrat/Montserrat-Light.svg#Montserrat-Light") format("svg");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "MuseoSans500";
+  src: url("../fonts/MuseoSans/../fonts/MuseoSans/MuseoSansCyrl-500.woff2") format("woff2"), url("../fonts/MuseoSans/MuseoSansCyrl-500.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "MuseoSans300";
+  src: url("../fonts/MuseoSans/MuseoSansCyrl-300.woff2") format("woff2"), url("../fonts/MuseoSans/MuseoSansCyrl-300.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "MuseoSans700";
+  src: url("../fonts/MuseoSans/MuseoSansCyrl-700.woff2") format("woff2"), url("../fonts/MuseoSans/MuseoSansCyrl-700.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "MuseoSans100";
+  src: url("../fonts/MuseoSans/MuseoSansCyrl-100.woff2") format("woff2"), url("../fonts/MuseoSans/MuseoSansCyrl-100.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  color: #330f06;
+}
+
+a {
+  color: #330f06;
+}
+
+.block-1 {
+  background: url(../img/block1/block-1-bg.png) repeat-x;
+  background-size: 100%;
+}
+.block-1__content {
+  padding-bottom: 10vh;
+}
+
+.header {
+  font-size: calc(16.875px + 10.125 * (100vw - 1200px) / 720);
+}
+.header__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.header__name {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.header__menu {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+.header__socials {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.header-name__items {
+  padding-top: calc(9.375px + 5.625 * (100vw - 1200px) / 720);
+  padding-left: calc(113.125px + 67.875 * (100vw - 1200px) / 720);
+}
+.header-name__name {
+  font-size: 1em;
+  font-family: "MuseoSans700";
+  display: inline-block;
+}
+.header-name__prof {
+  display: inline-block;
+  font-size: calc(12.5px + 7.5 * (100vw - 1200px) / 720);
+  font-family: "MuseoSans100";
+}
+
+.header-menu {
+  font-size: calc(11.25px + 6.75 * (100vw - 1200px) / 720);
+  font-family: "Montserrat";
+}
+.header-menu__body {
+  padding-top: calc(16.875px + 10.125 * (100vw - 1200px) / 720);
+  padding-left: calc(125px + 75 * (100vw - 1200px) / 720);
+}
+.header-menu__item {
+  display: inline-block;
+  margin-right: calc(32.5px + 19.5 * (100vw - 1200px) / 720);
+  margin-bottom: calc(9.375px + 5.625 * (100vw - 1200px) / 720);
+}
+
+.header-socials {
+  padding-top: calc(13.125px + 7.875 * (100vw - 1200px) / 720);
+  text-align: right;
+}
+.header-socials__phone {
+  padding-right: calc(7.5px + 4.5 * (100vw - 1200px) / 720);
+}
+
+.socials-phone__phone {
+  font-size: calc(15px + 9 * (100vw - 1200px) / 720);
+  font-family: "MuseoSans700";
+}
+.socials-phone__button {
+  font-family: "MuseoSans100";
+  font-size: calc(8.75px + 5.25 * (100vw - 1200px) / 720);
+}
+
+.block-1-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: calc(29.375px + 17.625 * (100vw - 1200px) / 720);
+}
+.block-1-content__text {
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+  padding-left: calc(123.125px + 73.875 * (100vw - 1200px) / 720);
+}
+.block-1-content__socials {
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+  text-align: right;
+  padding-right: calc(88.125px + 52.875 * (100vw - 1200px) / 720);
+  padding-top: calc(18.125px + 10.875 * (100vw - 1200px) / 720);
+}
+.block-1-content__invite {
+  font-size: calc(29.375px + 17.625 * (100vw - 1200px) / 720);
+  font-family: "MuseoSans500";
+  padding-top: calc(48.75px + 29.25 * (100vw - 1200px) / 720);
+}
+.block-1-content__title {
+  font-family: "MuseoSans700";
+  font-size: calc(32.5px + 19.5 * (100vw - 1200px) / 720);
+  padding-top: calc(12.5px + 7.5 * (100vw - 1200px) / 720);
+}
+.block-1-content__online {
+  font-family: "MuseoSans500";
+  font-size: calc(17.5px + 10.5 * (100vw - 1200px) / 720);
+  color: #9e0e0c;
+  padding-top: calc(20px + 12 * (100vw - 1200px) / 720);
+}
+.block-1-content__text {
+  font-family: "MuseoSans100";
+  font-size: calc(15.625px + 9.375 * (100vw - 1200px) / 720);
+}
+.block-1-content__text p {
+  margin-bottom: calc(18.75px + 11.25 * (100vw - 1200px) / 720);
+}
+.block-1-content__button {
+  font-family: "CenturyGothic";
+  font-size: calc(15.625px + 9.375 * (100vw - 1200px) / 720);
+  padding-top: calc(73.125px + 43.875 * (100vw - 1200px) / 720);
+}
+.block-1-content__button a {
+  color: #fff;
+  background: rgb(165, 36, 32);
+  background: -webkit-gradient(linear, left bottom, left top, from(rgb(165, 36, 32)), to(rgb(238, 94, 69)));
+  background: linear-gradient(0deg, rgb(165, 36, 32) 0%, rgb(238, 94, 69) 100%);
+  padding-top: calc(25px + 15 * (100vw - 1200px) / 720);
+  padding-bottom: calc(25px + 15 * (100vw - 1200px) / 720);
+  padding-left: calc(68.75px + 41.25 * (100vw - 1200px) / 720);
+  padding-right: calc(68.75px + 41.25 * (100vw - 1200px) / 720);
+  border-radius: calc(37.5px + 22.5 * (100vw - 1200px) / 720);
+  -webkit-box-shadow: 0 20px 20px rgba(203, 63, 48, 0.3137254902);
+          box-shadow: 0 20px 20px rgba(203, 63, 48, 0.3137254902);
+  border: 3px solid #fa7661;
+}
+
+.socials-socials__item {
+  margin-bottom: calc(11.875px + 7.125 * (100vw - 1200px) / 720);
+  line-height: 0;
+}
+.socials-socials__item img {
+  width: calc(12.5px + 7.5 * (100vw - 1200px) / 720);
+}
+
+@media screen and (max-width: 1199px) {
+  .header {
+    font-size: calc(12.5px + 7.5 * (100vw - 320px) / 1600);
+  }
+  .header-name__items {
+    padding-top: calc(9.375px + 5.625 * (100vw - 320px) / 1600);
+    padding-left: calc(62.5px + 37.5 * (100vw - 320px) / 1600);
+  }
+  .header-name__name {
+    font-size: 1em;
+    font-family: "MuseoSans700";
+    display: inline-block;
+  }
+  .header-name__prof {
+    display: inline-block;
+    font-size: calc(12.5px + 7.5 * (100vw - 320px) / 1600);
+    font-family: "MuseoSans100";
+  }
+  .header-menu {
+    font-size: calc(11.25px + 6.75 * (100vw - 320px) / 1600);
+    font-family: "Montserrat";
+  }
+  .header-menu__body {
+    padding-top: calc(16.875px + 10.125 * (100vw - 320px) / 1600);
+  }
+  .header-menu__item {
+    display: inline-block;
+    margin-right: calc(32.5px + 19.5 * (100vw - 320px) / 1600);
+  }
+  .header-socials {
+    padding-top: calc(13.125px + 7.875 * (100vw - 1200px) / 720);
+    text-align: right;
+  }
+  .header-socials__phone {
+    padding-right: calc(7.5px + 4.5 * (100vw - 320px) / 1600);
+    margin-bottom: calc(18.125px + 10.875 * (100vw - 320px) / 1600);
+  }
+  .socials-phone__phone {
+    font-size: calc(15px + 9 * (100vw - 320px) / 1600);
+    font-family: "MuseoSans700";
+  }
+  .socials-phone__button {
+    font-family: "MuseoSans100";
+    font-size: calc(8.75px + 5.25 * (100vw - 320px) / 1600);
+  }
+  .block-1-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: calc(29.375px + 17.625 * (100vw - 320px) / 1600);
+  }
+  .block-1-content__text {
+    -webkit-box-flex: 1;
+        -ms-flex: auto;
+            flex: auto;
+  }
+  .block-1-content__socials {
+    -webkit-box-flex: 1;
+        -ms-flex: auto;
+            flex: auto;
+    text-align: right;
+  }
+  .block-1-content__invite {
+    font-family: "MuseoSans500";
+    font-size: calc(15.625px + 9.375 * (100vw - 320px) / 1600);
+    padding-top: calc(31.25px + 18.75 * (100vw - 320px) / 1600);
+  }
+  .block-1-content__title {
+    font-family: "MuseoSans700";
+    font-size: calc(18.75px + 11.25 * (100vw - 320px) / 1600);
+    padding-top: calc(3.125px + 1.875 * (100vw - 320px) / 1600);
+  }
+  .block-1-content__online {
+    font-family: "MuseoSans500";
+    font-size: calc(12.5px + 7.5 * (100vw - 320px) / 1600);
+    padding-top: calc(9.375px + 5.625 * (100vw - 320px) / 1600);
+    color: #9e0e0c;
+  }
+  .block-1-content__text {
+    font-family: "MuseoSans100";
+    font-size: calc(11.25px + 6.75 * (100vw - 320px) / 1600);
+  }
+  .block-1-content__text p {
+    margin-bottom: calc(9.375px + 5.625 * (100vw - 1200px) / 720);
+  }
+  .block-1-content__text p:last-child {
+    margin: 0;
+  }
+  .block-1-content__button {
+    font-family: "CenturyGothic";
+    font-size: calc(11.25px + 6.75 * (100vw - 320px) / 1600);
+    padding-top: calc(37.5px + 22.5 * (100vw - 320px) / 1600);
+  }
+  .block-1-content__button a {
+    border-radius: calc(37.5px + 22.5 * (100vw - 320px) / 1600);
+  }
+  .socials-socials__item {
+    margin-bottom: calc(11.875px + 7.125 * (100vw - 320px) / 1600);
+    line-height: 0;
+  }
+  .socials-socials__item img {
+    width: calc(12.5px + 7.5 * (100vw - 320px) / 1600);
+  }
+}
+@media screen and (max-width: 761px) {
+  .block-1 {
+    background-size: auto 100%;
+  }
+  .header-name__items {
+    padding-top: calc(9.375px + 5.625 * (100vw - 320px) / 1600);
+    padding-left: calc(50px + 30 * (100vw - 320px) / 1600);
+  }
+}
+@media screen and (max-width: 389px) {
+  .block-1 {
+    background-position: 50%;
+  }
+  .header-name__items {
+    padding-top: calc(9.375px + 5.625 * (100vw - 320px) / 1600);
+    padding-left: calc(6.25px + 3.75 * (100vw - 320px) / 1600);
+  }
+}/*# sourceMappingURL=style.css.map */
