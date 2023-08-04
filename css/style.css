@@ -123,7 +123,8 @@ a {
 }
 
 .block-1 {
-  background: url(../img/block1/clowds-bottom-2.png) 0 bottom/50vw repeat-x, url(../img/block1/woman.png) 95% 0/auto 100% no-repeat, url(../img/block1/clowds-right.png) 100% 0/auto 100% no-repeat, url(../img/block1/clowds-left.png) 0 0/auto 100% no-repeat, url(../img/block1/Tower-Bridge.png) 103% 0/auto 100% no-repeat, url(../img/block1/big-ben.png) 100% 0/auto 100% no-repeat, url(../img/block1/global-bg.png) 0 0/100vw repeat-x;
+  background: url(../img/block1/block-1-bg.png) repeat-x;
+  background-size: 100%;
 }
 .block-1__content {
   padding-bottom: calc(129.375px + 77.625 * (100vw - 1200px) / 720);
