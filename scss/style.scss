@@ -263,36 +263,26 @@ a {
         padding-top: adap(15, 320);
         padding-left: adap(100, 320);
       }
-  
-      &__name {
-        font-size: 1em;
-        font-family: "MuseoSans700";
-        display: inline-block;
-      }
+
   
       &__prof {
-        display: inline-block;
         font-size: adap(20, 320);
-        font-family: "MuseoSans100";
       }
   }
   
   .header-menu {
     font-size: adap(18, 320);
-    font-family: 'Montserrat';
   
       &__body {
         padding-top: adap(27, 320);
       }
   
       &__item {
-        display: inline-block;
         margin-right: adap(52, 320);
       }
   }
   .header-socials {
     padding-top: adap(21);
-    text-align: right;
   
   
       &__phone {
@@ -304,64 +294,41 @@ a {
   
       &__phone {
         font-size: adap(24, 320);
-        font-family: "MuseoSans700";
       }
   
       &__button {
-        font-family: "MuseoSans100";
         font-size: adap(14, 320);
       }
   }
 
   .block-1-content {
-    display: flex;
     font-size: adap(47, 320);
   
-    &__content-text {
-      flex: auto;
-      // padding-left: adap(197, 320);
-    }
-  
-    &__socials {
-      flex: auto;
-      text-align: right;
-      // padding-right: adap(141, 320);
-      // padding-top: adap(29, 320);
-    }
     
     &__invite {
-      font-family: "MuseoSans500";
       font-size: adap(25, 320);
       padding-top: adap(50, 320);
     }
   
     &__title {
-      font-family: "MuseoSans700";
       font-size: adap(30, 320);
       padding-top: adap(20, 320);
     }
   
     &__online {
-      font-family: "MuseoSans500";
       font-size: adap(20, 320);
       padding-top: adap(20, 320);
-      color: #9e0e0c;
     }
   
     &__text {
       padding-top: adap(40, 320);
-      font-family: "MuseoSans100";
       font-size: adap(18, 320);
       & p {
         margin-bottom: adap(15);
-        &:last-child {
-          margin: 0;
-        }
       }
     }
   
     &__button {
-      font-family: "CenturyGothic";
       font-size: adap(18, 320);
       padding-top: adap(80, 320);
       & a {
@@ -400,7 +367,6 @@ a {
 @media screen and (max-width: 389px) {
   
   .block-1 {
-    // background-size: 200%;
     background-position: 50%;
   }
 
@@ -545,6 +511,4 @@ a {
       }
   }
   
-  
-
 }

@@ -282,30 +282,20 @@ a {
     padding-top: calc(9.375px + 5.625 * (100vw - 320px) / 1600);
     padding-left: calc(62.5px + 37.5 * (100vw - 320px) / 1600);
   }
-  .header-name__name {
-    font-size: 1em;
-    font-family: "MuseoSans700";
-    display: inline-block;
-  }
   .header-name__prof {
-    display: inline-block;
     font-size: calc(12.5px + 7.5 * (100vw - 320px) / 1600);
-    font-family: "MuseoSans100";
   }
   .header-menu {
     font-size: calc(11.25px + 6.75 * (100vw - 320px) / 1600);
-    font-family: "Montserrat";
   }
   .header-menu__body {
     padding-top: calc(16.875px + 10.125 * (100vw - 320px) / 1600);
   }
   .header-menu__item {
-    display: inline-block;
     margin-right: calc(32.5px + 19.5 * (100vw - 320px) / 1600);
   }
   .header-socials {
     padding-top: calc(13.125px + 7.875 * (100vw - 1200px) / 720);
-    text-align: right;
   }
   .header-socials__phone {
     padding-right: calc(7.5px + 4.5 * (100vw - 320px) / 1600);
@@ -313,58 +303,33 @@ a {
   }
   .socials-phone__phone {
     font-size: calc(15px + 9 * (100vw - 320px) / 1600);
-    font-family: "MuseoSans700";
   }
   .socials-phone__button {
-    font-family: "MuseoSans100";
     font-size: calc(8.75px + 5.25 * (100vw - 320px) / 1600);
   }
   .block-1-content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     font-size: calc(29.375px + 17.625 * (100vw - 320px) / 1600);
   }
-  .block-1-content__content-text {
-    -webkit-box-flex: 1;
-        -ms-flex: auto;
-            flex: auto;
-  }
-  .block-1-content__socials {
-    -webkit-box-flex: 1;
-        -ms-flex: auto;
-            flex: auto;
-    text-align: right;
-  }
   .block-1-content__invite {
-    font-family: "MuseoSans500";
     font-size: calc(15.625px + 9.375 * (100vw - 320px) / 1600);
     padding-top: calc(31.25px + 18.75 * (100vw - 320px) / 1600);
   }
   .block-1-content__title {
-    font-family: "MuseoSans700";
     font-size: calc(18.75px + 11.25 * (100vw - 320px) / 1600);
     padding-top: calc(12.5px + 7.5 * (100vw - 320px) / 1600);
   }
   .block-1-content__online {
-    font-family: "MuseoSans500";
     font-size: calc(12.5px + 7.5 * (100vw - 320px) / 1600);
     padding-top: calc(12.5px + 7.5 * (100vw - 320px) / 1600);
-    color: #9e0e0c;
   }
   .block-1-content__text {
     padding-top: calc(25px + 15 * (100vw - 320px) / 1600);
-    font-family: "MuseoSans100";
     font-size: calc(11.25px + 6.75 * (100vw - 320px) / 1600);
   }
   .block-1-content__text p {
     margin-bottom: calc(9.375px + 5.625 * (100vw - 1200px) / 720);
   }
-  .block-1-content__text p:last-child {
-    margin: 0;
-  }
   .block-1-content__button {
-    font-family: "CenturyGothic";
     font-size: calc(11.25px + 6.75 * (100vw - 320px) / 1600);
     padding-top: calc(50px + 30 * (100vw - 320px) / 1600);
   }
