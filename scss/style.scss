@@ -75,6 +75,10 @@
   @return calc(res($pix) * 1px + ($pix - res($pix)) * (100vw - $width * 1px) / (1920 - $width));
 }
 
+@function qadap($pix) {
+  @return $pix * 1px;
+}
+
 body {
   color: #330f06;
 }
@@ -280,6 +284,245 @@ a {
       }
 		}
 }
+
+.block-2 {
+
+  &__wrapper {
+    width: adap(1531);
+    margin: 0 auto;
+  }
+
+  &__title {
+    font-family: "MuseoSans500";
+    font-size: adap(47);
+    text-align: center;
+    margin-bottom: adap(49);
+  }
+
+  &__content {
+    display: flex;
+  }
+}
+.block-2-content {
+  font-family: "MuseoSans100";
+
+  &__left {
+    flex: 20;
+  }
+
+  &__middle {
+    flex: 19;
+  }
+
+  &__right {
+    flex: 20;
+  }
+
+  &__title {
+    font-size: adap(30);
+    font-family: "MuseoSans500";
+    color: #9e0e0c;
+    margin-bottom: adap(20);
+  }
+
+  &__text {
+    font-size: adap(20);
+    line-height: adap(30);
+    display: inline-block;
+  }
+
+  &__item {
+    border: adap(1) solid #fae5d3;
+    padding: adap(70) adap(70) adap(55) adap(66);
+    text-align: center;
+    border-radius: adap(10);
+    margin-bottom: adap(121);
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      border-radius: adap(10);
+      z-index: -2;
+      width: 90%; 
+      height: 90%; 
+      background-color: #fdefe4;
+    }
+
+    &_left-top::before {
+      left: 0;
+      top: 0;
+    }
+
+    &_right-top::before {
+      right: 0;
+      top: 0;
+    }
+
+    &_left-bottom::before {
+      left: 0;
+      bottom: 0;
+    }
+
+    &_right-bottom::before {
+      right: 0;
+      bottom: 0;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      border-radius: adap(10);
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+      border: adap(1) solid #f4c39a;
+    }
+
+    &_left-top::after {
+      left: adap(10);
+      top: adap(10);
+    }
+
+    &_right-top::after {
+      right: adap(10);
+      top: adap(10);
+    }
+
+    &_left-bottom::after {
+      left: adap(10);
+      bottom: adap(10);
+    }
+
+    &_right-bottom::after {
+      right: adap(10);
+      bottom: adap(10);
+    }
+  }
+}
+.content-left {
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__item {
+    &:first-child {
+      margin-left: adap(83);
+    }
+    &:nth-child(2) {
+      margin-right: adap(83);
+      margin-bottom: 0;
+    }
+  }
+}
+.content-middle {
+  font-size: adap(12);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__top-text {
+    padding-bottom: adap(30);
+    padding-left: adap(222);
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &:hover {
+      .content-middle__button {
+      box-shadow: inset 0 0 5px rgb(214, 79, 61), 0 0 60px rgb(226, 99, 83);
+      background: rgb(146,66,56);
+      background: linear-gradient(0deg, rgba(146,66,56,1) 0%, rgba(255,99,85,1) 100%); 
+      }
+    }
+  }
+
+  &__button {
+    position: relative;
+    display: inline-block;
+    border-radius: 50%;
+    width: adap(109);
+    height: adap(109);
+    box-shadow: inset 0 0 5px rgb(249, 45, 18), 0 0 40px rgb(249, 45, 18);
+    background: rgb(216,48,27);
+    background: radial-gradient(circle, rgb(230, 66, 45) 0%, rgb(193, 58, 46) 100%); 
+  }
+
+  &__button::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: adap(10) 0 adap(10) adap(14); /* Размеры треугольника */
+    border-color: transparent transparent transparent white; /* Цвет треугольника */
+    transform: translate(-50%, -50%) rotate(0deg); /* Чтобы сместить треугольник в центр кнопки */
+  }
+
+  &__button:active {
+    box-shadow: inset 0 0 5px rgb(249, 45, 18), 0 0 60px rgb(249, 45, 18);
+    background: rgb(216,48,27);
+    background: radial-gradient(circle, rgb(242, 59, 35) 0%, rgb(171, 42, 30) 100%); 
+  }
+
+  &__bottom-text {
+    padding-top: adap(50);
+    padding-right: adap(180);
+  }
+}
+.content-right {
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__item {
+    &:first-child {
+      margin-left: adap(83);
+      margin-top: adap(7);
+    }
+    &:nth-child(2) {
+      margin-right: adap(83);
+      margin-top: adap(20);
+      margin-bottom: 0;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// медиа запросы
+// ============================================================//
 
 
 @media screen and (max-width: 1199px) {
