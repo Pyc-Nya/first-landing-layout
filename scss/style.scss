@@ -86,8 +86,15 @@ a {
 .wrapper {
 }
 .block-1 {
-  background: url(../img/block1/block-1-bg.png) repeat-x;
-  background-size: 100%;
+  background:
+  url(../img/block1/clowds-bottom-2.png) 0 bottom / 50vw repeat-x,
+  url(../img/block1/woman.png) 95% 0 / auto 100% no-repeat,
+  url(../img/block1/clowds-right.png) 100% 0 / auto 100% no-repeat,
+  url(../img/block1/clowds-left.png) 0 0 / auto 100% no-repeat,
+  url(../img/block1/Tower-Bridge.png) 103% 0 / auto 100% no-repeat,
+  url(../img/block1/big-ben.png) 100% 0 / auto 100% no-repeat,
+  url(../img/block1/global-bg.png) 0 0 / 100vw repeat-x,
+  ;
 
 		&__header {
 		}
@@ -122,6 +129,9 @@ a {
 		&__items {
       padding-top: adap(15);
       padding-left: adap(181);
+      & a:hover {
+        color: #9e0e0c;
+      }
 		}
 
 		&__name {
@@ -150,6 +160,9 @@ a {
       display: inline-block;
       margin-right: adap(52);
       margin-bottom: adap(15);
+      & a:hover {
+        color: #9e0e0c;
+      }
 		}
 }
 .header-socials {
@@ -159,6 +172,9 @@ a {
 
 		&__phone {
       padding-right: adap(12);
+      & a:hover {
+        color: #9e0e0c;
+      }
 		}
 }
 .socials-phone {
@@ -173,6 +189,9 @@ a {
       font-family: "MuseoSans300";
       font-size: adap(14);
       text-decoration: underline;
+      & a:hover {
+        text-decoration: underline;
+      }
 		}
 }
 
@@ -226,8 +245,8 @@ a {
     padding-top: adap(117);
     & a {
       color: #fff;
-      background: rgb(165,36,32);
-      background: linear-gradient(0deg, rgba(165,36,32,1) 0%, rgba(238,94,69,1) 100%);
+      background: rgb(154, 7, 2);
+      background: linear-gradient(0deg, rgb(159, 5, 0) 0%, rgb(255, 38, 0) 100%);
       padding-top: adap(40);
       padding-bottom: adap(40);
       padding-left: adap(110);
@@ -235,6 +254,18 @@ a {
       border-radius: adap(60);
       box-shadow: 0 20px 20px #cb3f3050;
       border: adap(3) solid #fa7661;
+
+      &:hover {
+        background: rgb(198, 37, 31);
+        background: linear-gradient(0deg, rgb(160, 35, 31) 0%, rgb(254, 83, 53) 100%);
+      }
+
+      &:active {
+        background: rgb(167, 8, 3);
+        background: linear-gradient(0deg, rgb(156, 6, 0) 0%, rgrgb(156, 23, 0)00%);
+        box-shadow: 0 20px 30px #ff2911b8;
+      }
+
     }
   }
 }
@@ -244,8 +275,15 @@ a {
 		&__item {
       margin-bottom: adap(19);
       line-height: 0;
+      font-size: 0;
+      &:active {
+        filter: blur(5px);
+      }
       & img {
         width: adap(20);
+        &:hover {
+          filter: saturate(5);
+        }
       }
 		}
 }
