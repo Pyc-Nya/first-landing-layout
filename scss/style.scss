@@ -206,6 +206,9 @@ a {
       font-size: adap(24);
       font-family: "MuseoSans700";
       margin-bottom: adap(9);
+      &_761 {
+        display: none;
+      }
 		}
 
 		&__button {
@@ -734,7 +737,7 @@ a {
   .content-left {
     &__item {
       &:nth-child(2) {
-        margin-bottom: adap(30, 320);
+        margin-bottom: adap(40, 320);
       }
     }
   }
@@ -892,6 +895,18 @@ a {
       padding-top: adap(15, 320);
       padding-left: adap(80, 320);
     }
+  }
+  .socials-phone {
+
+		&__phone {
+      &_761 {
+        display: inline-block;
+      }
+      &_1200 {
+        display: none;
+      }
+		}
+
   }
 }
 
