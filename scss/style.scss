@@ -275,8 +275,8 @@ a {
       padding-left: adap(110);
       padding-right: adap(110);
       border-radius: adap(60);
-      box-shadow: 0 20px 20px #cb3f3050;
-      border: adap(3) solid #fa7661;
+      box-shadow: 0 20px 20px #cb3f3050, inset 0 0 20px #fa9393;
+
 
       &:hover {
         background: rgb(198, 37, 31);
@@ -732,9 +732,9 @@ a {
     }
   }
   .content-left {
-    &__item {x
+    &__item {
       &:nth-child(2) {
-        margin-bottom: adap(60, 320);
+        margin-bottom: adap(30, 320);
       }
     }
   }
@@ -863,6 +863,7 @@ a {
       padding-top: adap(80, 320);
       & a {
         border-radius: adap(60, 320);
+        box-shadow: 0 5px 10px #9e0e0c;
       }
     }
   }
@@ -897,7 +898,7 @@ a {
 @media screen and (max-width: 389px) {
   
   .block-1 {
-    background-position: 50%;
+    background-position: 0;
   }
 
   .header-name {
@@ -907,7 +908,13 @@ a {
       padding-left: adap(10, 320);
     }
   }
-  
+  .block-1-content {
+    &__button {
+      & a {
+        box-shadow: 0 5px 10px #9e0e0c;
+      }
+    }
+  }
 }
 
 
