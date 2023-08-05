@@ -701,7 +701,7 @@ a {
     margin-bottom: calc(6.25px + 3.75 * (100vw - 320px) / 1600);
   }
   .block-3-name__prof {
-    font-size: calc(12.5px + 7.5 * (100vw - 320px) / 1600);
+    font-size: calc(13.75px + 8.25 * (100vw - 320px) / 1600);
   }
   .block-3-list__item {
     margin-bottom: calc(12.5px + 7.5 * (100vw - 320px) / 1600);
