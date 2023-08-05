@@ -536,6 +536,7 @@ a {
 .block-3 {
   padding-top: calc(156.875px + 94.125 * (100vw - 1200px) / 720);
   padding-bottom: calc(112.5px + 67.5 * (100vw - 1200px) / 720);
+  margin-bottom: calc(48.75px + 29.25 * (100vw - 1200px) / 720);
   background: url(../img/block3/clowds-top.png) 0 -10%/100% repeat-x, url(../img/block3/clowds-bottom.png) 0 100%/100% repeat-x, url(../img/block3/woman.png) 10% 82%/auto 70% no-repeat, url(../img/block3/left-shade.png) 0 0/100% no-repeat, url(../img/block3/clowds-middle.png) 50% 0/200% no-repeat, url(../img/block3/clowds-left-2.png) 0 0/100% no-repeat, url(../img/block3/clowds-left-1.png) 0 0/100% no-repeat, url(../img/block3/right-shade.png) 100% 0/100% no-repeat, url(../img/block3/clowds-right-2.png) 100% 0/100% no-repeat, url(../img/block3/clowds-right-1.png) 100% 0/100% no-repeat, url(../img/block3/global-bg.png) 0 0/100vw repeat;
 }
 .block-3__body {
@@ -625,6 +626,221 @@ a {
   margin: 0;
 }
 
+.block-4__title {
+  text-align: center;
+  font-family: "MuseoSans500";
+  font-size: calc(26.875px + 16.125 * (100vw - 1200px) / 720);
+  margin-bottom: calc(51.875px + 31.125 * (100vw - 1200px) / 720);
+}
+.block-4__button {
+  text-align: center;
+}
+
+.block-4-content__body {
+  padding: 0 calc(115.625px + 69.375 * (100vw - 1200px) / 720);
+  display: grid;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  grid-template-columns: repeat(auto-fill, minmax(calc(231.25px + 138.75 * (100vw - 1200px) / 720), 1fr));
+  grid-template-rows: repeat(2, calc(196.25px + 117.75 * (100vw - 1200px) / 720));
+  row-gap: calc(81.25px + 48.75 * (100vw - 1200px) / 720);
+  -webkit-column-gap: calc(106.25px + 63.75 * (100vw - 1200px) / 720);
+     -moz-column-gap: calc(106.25px + 63.75 * (100vw - 1200px) / 720);
+          column-gap: calc(106.25px + 63.75 * (100vw - 1200px) / 720);
+  margin-bottom: calc(25.625px + 15.375 * (100vw - 1200px) / 720);
+}
+.block-4-content__item {
+  padding-top: calc(44.375px + 26.625 * (100vw - 1200px) / 720);
+  border: calc(0.625px + 0.375 * (100vw - 1200px) / 720) solid #fae5d3;
+  text-align: center;
+  border-radius: calc(6.25px + 3.75 * (100vw - 1200px) / 720);
+  position: relative;
+}
+.block-4-content__item::before {
+  content: "";
+  position: absolute;
+  border-radius: calc(6.25px + 3.75 * (100vw - 1200px) / 720);
+  z-index: -2;
+  width: 90%;
+  height: 90%;
+  background-color: #fdefe4;
+  left: 0;
+  top: 0;
+}
+.block-4-content__item::after {
+  content: "";
+  position: absolute;
+  border-radius: calc(6.25px + 3.75 * (100vw - 1200px) / 720);
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  border: calc(0.625px + 0.375 * (100vw - 1200px) / 720) solid #f4c39a;
+  left: calc(6.25px + 3.75 * (100vw - 1200px) / 720);
+  top: calc(6.25px + 3.75 * (100vw - 1200px) / 720);
+}
+.block-4-content__item-circle::after {
+  content: "1";
+  font-family: "MuseoSans100";
+  position: absolute;
+  font-size: calc(10px + 6 * (100vw - 1200px) / 720);
+  color: white;
+  z-index: 3;
+  width: calc(25px + 15 * (100vw - 1200px) / 720);
+  height: calc(25px + 15 * (100vw - 1200px) / 720);
+  background: rgb(152, 15, 11);
+  background: -webkit-gradient(linear, left bottom, left top, from(rgb(152, 15, 11)), to(rgb(245, 72, 42)));
+  background: linear-gradient(0deg, rgb(152, 15, 11) 0%, rgb(245, 72, 42) 100%);
+  bottom: calc(-12.5px + -7.5 * (100vw - 1200px) / 720);
+  right: calc(-12.5px + -7.5 * (100vw - 1200px) / 720);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+}
+.block-4-content__item-circle_2::after {
+  content: "2";
+}
+.block-4-content__item-circle_3::after {
+  content: "3";
+}
+.block-4-content__item-circle_3::after {
+  content: "3";
+}
+.block-4-content__item-circle_4::after {
+  content: "4";
+}
+.block-4-content__item-circle_5::after {
+  content: "5";
+}
+.block-4-content__item-circle_6::after {
+  content: "6";
+}
+.block-4-content__title {
+  font-size: calc(15.625px + 9.375 * (100vw - 1200px) / 720);
+}
+.block-4-content__text {
+  font-family: "MuseoSans100";
+  line-height: calc(18.75px + 11.25 * (100vw - 1200px) / 720);
+  font-size: calc(12.5px + 7.5 * (100vw - 1200px) / 720);
+}
+
+@media screen and (max-width: 761px) {
+  .block-4__body {
+    padding-top: calc(25px + 15 * (100vw - 320px) / 1600);
+    width: 95%;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .block-4__title {
+    font-size: calc(23.75px + 14.25 * (100vw - 320px) / 1600);
+    margin-bottom: calc(37.5px + 22.5 * (100vw - 320px) / 1600);
+  }
+  .block-4__button {
+    font-size: calc(13.75px + 8.25 * (100vw - 320px) / 1600) !important;
+  }
+  .block-4__button a {
+    padding: calc(12.5px + 7.5 * (100vw - 320px) / 1600) calc(18.75px + 11.25 * (100vw - 320px) / 1600) !important;
+  }
+  .block-4-content__body {
+    padding: 0 calc(115.625px + 69.375 * (100vw - 1200px) / 720);
+    grid-template-columns: calc(250px + 150 * (100vw - 320px) / 1600);
+    grid-template-rows: repeat(6, calc(218.75px + 131.25 * (100vw - 320px) / 1600));
+    row-gap: calc(137.5px + 82.5 * (100vw - 1200px) / 720);
+    margin-bottom: calc(25.625px + 15.375 * (100vw - 1200px) / 720);
+  }
+  .block-4-content__item {
+    padding-top: calc(44.375px + 26.625 * (100vw - 320px) / 1600);
+    border: calc(0.625px + 0.375 * (100vw - 320px) / 1600) solid #fae5d3;
+    border-radius: calc(6.25px + 3.75 * (100vw - 320px) / 1600);
+  }
+  .block-4-content__item::before {
+    border-radius: calc(6.25px + 3.75 * (100vw - 320px) / 1600);
+  }
+  .block-4-content__item::after {
+    border-radius: 10px;
+    border: calc(0.625px + 0.375 * (100vw - 320px) / 1600) solid #f4c39a;
+    left: calc(6.25px + 3.75 * (100vw - 320px) / 1600);
+    top: calc(6.25px + 3.75 * (100vw - 320px) / 1600);
+  }
+  .block-4-content__item-circle::after {
+    font-size: calc(10px + 6 * (100vw - 320px) / 1600);
+    width: calc(25px + 15 * (100vw - 320px) / 1600);
+    height: calc(25px + 15 * (100vw - 320px) / 1600);
+    bottom: calc(-12.5px + -7.5 * (100vw - 320px) / 1600);
+    right: calc(-12.5px + -7.5 * (100vw - 320px) / 1600);
+  }
+  .block-4-content__title {
+    font-size: calc(18.75px + 11.25 * (100vw - 320px) / 1600) !important;
+    margin-bottom: calc(18.75px + 11.25 * (100vw - 320px) / 1600) !important;
+  }
+  .block-4-content__text {
+    line-height: calc(18.75px + 11.25 * (100vw - 320px) / 1600) !important;
+    font-size: calc(13.75px + 8.25 * (100vw - 320px) / 1600) !important;
+  }
+}
+@media screen and (min-width: 1919px) {
+  .block-4__body {
+    width: 1920px;
+    margin: 0 auto;
+  }
+  .block-4__title {
+    font-size: 43px;
+    margin-bottom: 83px;
+  }
+  .block-4-content__body {
+    padding: 0 185px;
+    grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
+    grid-template-rows: repeat(2, 314px);
+    row-gap: 130px;
+    -webkit-column-gap: 170px;
+       -moz-column-gap: 170px;
+            column-gap: 170px;
+    margin-bottom: 41px;
+  }
+  .block-4-content__item {
+    padding-top: 71px;
+    border: 1px solid #fae5d3;
+    border-radius: 10px;
+  }
+  .block-4-content__item::before {
+    border-radius: 10px;
+  }
+  .block-4-content__item::after {
+    border-radius: qqadap(10);
+    border: 1px solid #f4c39a;
+    left: 10px;
+    top: 10px;
+  }
+  .block-4-content__item-circle::after {
+    font-size: 16px;
+    width: 40px;
+    height: 40px;
+    bottom: -20px;
+    right: -20px;
+  }
+  .block-4-content__title {
+    font-size: 25px;
+  }
+  .block-4-content__text {
+    line-height: 30px;
+    font-size: 20px;
+  }
+}
 @media screen and (max-width: 761px) {
   .block-3 {
     background: url(../img/block3/clowds-top.png) 0 0%/100vw no-repeat, url(../img/block3/clowds-bottom.png) 0 100%/auto 15vh repeat-x, url(../img/block3/woman.png) 60% 100%/auto 430px no-repeat, url(../img/block3/left-shade.png) 0 0/auto 100% no-repeat, url(../img/block3/clowds-middle.png) 50% 0/200% no-repeat, url(../img/block3/clowds-left-2.png) 0 0/auto 100% no-repeat, url(../img/block3/clowds-left-1.png) 0 0/auto 100% no-repeat, url(../img/block3/right-shade.png) 100% 0/auto 100% no-repeat, url(../img/block3/clowds-right-2.png) 100% 0/auto 100% no-repeat, url(../img/block3/clowds-right-1.png) 100% 0/auto 100% no-repeat, url(../img/block3/global-bg.png) 0 0/100vw no-repeat;
@@ -712,6 +928,7 @@ a {
     background: url(../img/block3/clowds-top.png) 0 0%/40% repeat-x, url(../img/block3/clowds-bottom.png) 0 100%/40% repeat-x, url(../img/block3/woman.png) 10% 100%/auto 70% no-repeat, url(../img/block3/left-shade.png) 0 0/100% no-repeat, url(../img/block3/clowds-middle.png) 50% 0/200% no-repeat, url(../img/block3/clowds-left-2.png) 0 0/100% no-repeat, url(../img/block3/clowds-left-1.png) 0 0/100% no-repeat, url(../img/block3/right-shade.png) 100% 0/100% no-repeat, url(../img/block3/clowds-right-2.png) 100% 0/100% no-repeat, url(../img/block3/clowds-right-1.png) 100% 0/100% no-repeat, url(../img/block3/global-bg.png) 0 0/100vw no-repeat;
     padding-top: 251px;
     padding-bottom: 180px;
+    margin-bottom: 78px;
   }
   .block-3__body {
     width: 1920px;
@@ -1033,7 +1250,7 @@ a {
 }
 @media screen and (min-width: 1921px) {
   .block-1 {
-    background: url(../img/block1/clowds-bottom-2.png) 0 bottom/50vw repeat-x, url(../img/block1/woman.png) 95% 0/auto 100% no-repeat, url(../img/block1/clowds-right.png) 100% 0/auto 100% no-repeat, url(../img/block1/clowds-left.png) 0 0/auto 100% no-repeat, url(../img/block1/Tower-Bridge.png) 103% 0/auto 100% no-repeat, url(../img/block1/big-ben.png) 100% 0/auto 100% no-repeat, url(../img/block1/global-bg.png) 0 0/100vw repeat-x;
+    background: url(../img/block1/clowds-bottom-2.png) 0 bottom/auto 10vh repeat-x, url(../img/block1/woman.png) 95% 0/auto 100% no-repeat, url(../img/block1/clowds-right.png) 100% 0/auto 100% no-repeat, url(../img/block1/clowds-left.png) 0 0/auto 100% no-repeat, url(../img/block1/Tower-Bridge.png) 103% 0/auto 100% no-repeat, url(../img/block1/big-ben.png) 100% 0/auto 100% no-repeat, url(../img/block1/global-bg.png) 0 0/100vw repeat-x;
   }
   .block-1__wrapper {
     width: 1920px;

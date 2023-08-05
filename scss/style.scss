@@ -578,6 +578,7 @@ a {
 .block-3 {
   padding-top: adap(251);
   padding-bottom: adap(180);
+  margin-bottom: adap(78);
   background: 
     url(../img/block3/clowds-top.png) 0 -10% / 100% repeat-x,
     url(../img/block3/clowds-bottom.png) 0 100% / 100% repeat-x,
@@ -706,8 +707,310 @@ a {
 
 
 
+
+
+
+
+// =============================================================== //
+// block-4
+
+.block-4 {
+
+  &__body {
+  }
+
+  &__title {
+    text-align: center;
+    font-family: "MuseoSans500";
+    font-size: adap(43);
+    margin-bottom: adap(83);
+  }
+
+  &__content {
+  }
+
+  &__button {
+    text-align: center;
+  }
+}
+.block-4-content {
+
+  &__body {
+    padding: 0 adap(185);
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(auto-fill, minmax(adap(370), 1fr));
+    grid-template-rows: repeat(2, adap(314));
+    row-gap: adap(130);
+    column-gap: adap(170);
+    margin-bottom: adap(41);
+  }
+
+  &__item {
+    padding-top: adap(71);
+    border: adap(1) solid #fae5d3;
+    text-align: center;
+    border-radius: adap(10);
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      border-radius: adap(10);
+      z-index: -2;
+      width: 90%; 
+      height: 90%; 
+      background-color: #fdefe4;
+      left: 0;
+      top: 0;
+    }
+
+
+    &::after {
+      content: '';
+      position: absolute;
+      border-radius: adap(10);
+      z-index: 2;
+      width: 100%;
+      height: 100%;
+      border: adap(1) solid #f4c39a;
+      left: adap(10);
+      top: adap(10);
+    }
+
+  }
+
+  &__item-circle::after {
+      content: '1';
+      font-family: "MuseoSans100";
+      position: absolute;
+      font-size: adap(16);
+      color: white;
+      z-index: 3;
+      width: adap(40);
+      height: adap(40);
+      background: rgb(152,15,11);
+      background: linear-gradient(0deg, rgba(152,15,11,1) 0%, rgba(245,72,42,1) 100%); 
+      bottom: adap(-20);
+      right: adap(-20);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+  }
+
+  &__item-circle_2::after {
+    content: '2';
+  }
+  &__item-circle_3::after {
+    content: '3';
+  }
+  &__item-circle_3::after {
+    content: '3';
+  }
+  &__item-circle_4::after {
+    content: '4';
+  }
+  &__item-circle_5::after {
+    content: '5';
+  }
+  &__item-circle_6::after {
+    content: '6';
+  }
+
+  &__title {
+    font-size: adap(25);
+  }
+
+  &__text {
+    font-family: "MuseoSans100";
+    line-height: adap(30);
+    font-size: adap(20);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // медиа запросы
 // ============================================================ //
+  
+// =============================================================== //
+// block-4
+
+@media screen and (max-width: 761px)  {
+
+  .block-4 {
+
+    &__body {
+      padding-top: adap(40, 320);
+      width: 95%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__title {
+      font-size: adap(38, 320);
+      margin-bottom: adap(60, 320);
+    }
+
+    &__button {
+      font-size: adap(22, 320) !important;
+      & a {
+        padding: adap(20, 320) adap(30, 320)  !important;
+      }
+    }
+
+  }
+  .block-4-content {
+
+    &__body {
+      padding: 0 adap(185);
+      grid-template-columns: adap(400, 320);
+      grid-template-rows: repeat(6, adap(350, 320));
+      row-gap: adap(220);
+      margin-bottom: adap(41);
+    }
+
+    &__item {
+      padding-top: adap(71, 320);
+      border: adap(1, 320) solid #fae5d3;
+      border-radius: adap(10, 320);
+
+      &::before {
+        border-radius: adap(10, 320);
+      }
+
+
+      &::after {
+        border-radius: qadap(10);
+        border: adap(1, 320) solid #f4c39a;
+        left: adap(10, 320);
+        top: adap(10, 320);
+      }
+
+    }
+
+    &__item-circle::after {
+        font-size: adap(16, 320);
+        width: adap(40, 320);
+        height: adap(40, 320);
+        bottom: adap(-20, 320);
+        right: adap(-20, 320);
+    }
+    &__title {
+      font-size: adap(30, 320) !important;
+      margin-bottom: adap(30, 320) !important;
+    }
+
+    &__text {
+      line-height: adap(30, 320) !important;
+      font-size: adap(22, 320) !important;
+    }
+  }
+}
+
+
+
+@media screen and (min-width: 1919px) {
+
+  .block-4 {
+
+    &__body {
+      width: 1920px;
+      margin: 0 auto;
+    }
+
+    &__title {
+      font-size: qadap(43);
+      margin-bottom: qadap(83);
+    }
+
+  }
+  .block-4-content {
+
+    &__body {
+      padding: 0 qadap(185);
+      grid-template-columns: repeat(auto-fill, minmax(qadap(370), 1fr));
+      grid-template-rows: repeat(2, qadap(314));
+      row-gap: qadap(130);
+      column-gap: qadap(170);
+      margin-bottom: qadap(41);
+    }
+
+    &__item {
+      padding-top: qadap(71);
+      border: qadap(1) solid #fae5d3;
+      border-radius: qadap(10);
+
+      &::before {
+        border-radius: qadap(10);
+      }
+
+
+      &::after {
+        border-radius: qqadap(10);
+        border: qadap(1) solid #f4c39a;
+        left: qadap(10);
+        top: qadap(10);
+      }
+
+    }
+
+    &__item-circle::after {
+        font-size: qadap(16);
+        width: qadap(40);
+        height: qadap(40);
+        bottom: qadap(-20);
+        right: qadap(-20);
+    }
+    &__title {
+      font-size: qadap(25);
+    }
+
+    &__text {
+      line-height: qadap(30);
+      font-size: qadap(20);
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // ============================================================= //
@@ -869,6 +1172,7 @@ a {
   
     padding-top: qadap(251);
     padding-bottom: qadap(180);
+    margin-bottom: 78px;
 
     &__body {
       width: 1920px;
@@ -1348,7 +1652,7 @@ a {
 
   .block-1 {
     background:
-    url(../img/block1/clowds-bottom-2.png) 0 bottom / 50vw repeat-x,
+    url(../img/block1/clowds-bottom-2.png) 0 bottom / auto 10vh repeat-x,
     url(../img/block1/woman.png) 95% 0 / auto 100% no-repeat,
     url(../img/block1/clowds-right.png) 100% 0 / auto 100% no-repeat,
     url(../img/block1/clowds-left.png) 0 0 / auto 100% no-repeat,
