@@ -89,7 +89,24 @@ a {
 .wrapper {
 }
 
+.title {
+  font-family: "MuseoSans500";
+  font-size: adap(47);
+  text-align: center;
+  margin-bottom: adap(49);
+}
 
+.content-title {
+  font-size: adap(30);
+  font-family: "MuseoSans500";
+  color: #9e0e0c;
+}
+
+.content-text {
+  font-family: "MuseoSans100";
+  font-size: adap(20);
+  display: inline-block;
+}
 
 
 
@@ -716,6 +733,8 @@ a {
 
 .block-4 {
 
+  margin-bottom: adap(100);
+
   &__body {
   }
 
@@ -847,11 +866,382 @@ a {
 
 
 
+// ============================================================ //
+// block-5
+
+.block-5 {
+
+  background:
+    url(../img/block3/clowds-top.png) 0 -10% / 100% repeat-x,
+    url(../img/block3/clowds-bottom.png) 0 110% / 100% repeat-x, 
+    url(../img/block5/woman.png) 100% 90% / auto 70% no-repeat,
+    url(../img/block3/clowds-middle.png) 50% 50% / 120vw no-repeat,
+    url(../img/block3/left-shade.png) 0 0 / auto 100% no-repeat,
+    url(../img/block3/clowds-left-2.png) 0 0 / auto 100% no-repeat,
+    url(../img/block3/clowds-left-1.png) 0 0 / auto 100% no-repeat,
+    url(../img/block3/right-shade.png) 100% 0 / auto 100% no-repeat,
+    url(../img/block3/clowds-right-2.png) 100% 0 / auto 100% no-repeat,
+    url(../img/block3/clowds-right-1.png) 100% 0 / auto 100% no-repeat,
+    url(../img/block3/global-bg.png) 0 0 / 100vw no-repeat,
+  ;
+
+  &__body {
+    padding-top: adap(232);
+    padding-bottom: adap(177);
+    width: adap(1550);
+    margin: 0 auto;
+  }
+
+  &__title {
+    margin-bottom: adap(86, 320) !important;
+  }
+
+  &__content {
+  }
+}
+.block-5-content {
+
+  &__body {
+  }
+
+  &__line-1 {
+    display: flex;
+    text-align: center;
+  }
+
+  &__line-2 {
+    display: flex;
+    text-align: center;
+
+    .block-5-content__item-wrapper {
+      margin-bottom: 0;
+    }
+  }
+
+  &__item-wrapper {
+    margin-right: adap(92);
+    margin-bottom: adap(86);
+    position: relative;
+  }
+
+  &__item-wrapper::after {
+    content: '';
+    position: absolute;
+    z-index: 3;
+    top: adap(13);
+    left: adap(13);
+    width: adap(26);
+    height: adap(26);
+  }
+
+  &__item-wrapper_01::after {
+    background: url(../img/icons/block-5__item-01.png) 50% 50% / contain no-repeat;
+  }
+  &__item-wrapper_02::after {
+    background: url(../img/icons/block-5__item-02.png) 50% 50% / contain no-repeat;
+  }
+  &__item-wrapper_03::after {
+    background: url(../img/icons/block-5__item-03.png) 50% 50% / contain no-repeat;
+  }
+  &__item-wrapper_04::after {
+    background: url(../img/icons/block-5__item-04.png) 50% 50% / contain no-repeat;
+  }
+  &__item-wrapper_05::after {
+    background: url(../img/icons/block-5__item-05.png) 50% 50% / contain no-repeat;
+  }
+
+  &__item {
+    position: relative;
+    width: adap(348);
+    height: adap(273);
+    background: #ffc8c8;
+    padding: adap(40) adap(25) adap(53) adap(30);
+    background: rgb(236,202,191);
+    background: linear-gradient(330deg, rgba(236,202,191,1) 0%, rgba(255,255,255,0) 50%); 
+    border-bottom: adap(1) solid #db8072;
+    border-right: adap(1) solid #db8072;
+    border-radius: adap(10);
+  }
+
+  &__item::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-bottom: adap(1) solid #e69a92;
+    border-right: adap(1) solid #e69a92;
+    border-radius: adap(10);
+    bottom: adap(-10);
+    right: adap(-10);
+  }
+
+  &__item::before {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: adap(52);
+    height: adap(52);
+    border-radius: 50%;
+    background: rgb(192,58,46);
+    background: linear-gradient(0deg, rgba(192,58,46,1) 0%, rgba(248,84,57,1) 100%);
+    box-shadow: inset 0 0 adap(10) rgb(255, 163, 155);
+  }
+
+  &__title {
+    font-size: adap(26);
+  }
+
+  &__text {
+    font-size: adap(17);
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // медиа запросы
 // ============================================================ //
   
+
+// ============================================================ //
+// block-5
+
+@media screen and (max-width: 761px) {
+  
+  .block-5 {
+
+    background:
+      url(../img/block3/clowds-top.png) 0 0 / 100% repeat-x,
+      url(../img/block3/clowds-bottom.png) 0 100% / 100% repeat-x, 
+      url(../img/block5/woman.png) 50% 100% / auto adap(500, 320) no-repeat,
+      url(../img/block3/clowds-middle.png) 50% 50% / auto 120% no-repeat,
+      url(../img/block3/global-bg.png) 0 0 / 110vw 120% no-repeat,
+    ;
+
+    &__body {
+      padding-top: adap(150, 320);
+      padding-bottom: adap(177, 320);
+    }
+
+    &__title {
+      margin-bottom: adap(86, 320) !important;
+      font-size: adap(38, 320);
+    }
+
+  }
+  .block-5-content {
+
+    &__body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__line-1 {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    &__line-2 {
+      display: flex;
+      text-align: center;
+      flex-direction: column;
+      margin-bottom: adap(300, 320);
+
+      .block-5-content__item-wrapper:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &__item-wrapper {
+      margin-bottom: adap(40, 320) !important;
+      margin-right: 0 !important;
+    }
+
+    &__item-wrapper::after {
+      top: adap(13, 320);
+      left: adap(13, 320);
+      width: adap(26, 320);
+      height: adap(26, 320);
+    }
+
+    &__item {
+      width: adap(380, 320);
+      height: adap(273, 320);
+      padding: adap(30, 320) adap(15, 320) adap(40, 320) adap(15, 320);
+      border-bottom: adap(1, 320) solid #db8072;
+      border-right: adap(1, 320) solid #db8072;
+      border-radius: adap(10, 320);
+    }
+
+    &__item::after {
+      border-bottom: adap(1, 320) solid #e69a92;
+      border-right: adap(1, 320) solid #e69a92;
+      border-radius: adap(10, 320);
+      bottom: adap(-10, 320);
+      right: adap(-10, 320);
+    }
+
+    &__item::before {
+      width: adap(52, 320);
+      height: adap(52, 320);
+      box-shadow: inset 0 0 adap(10, 320) rgb(255, 163, 155);
+    }
+
+    &__title {
+      font-size: adap(28, 320);
+      margin-bottom: adap(20, 320);
+    }
+
+    &__text {
+      font-size: adap(20, 320);
+      line-height: adap(30, 320);
+    }
+
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1919px) {
+  .block-5 {
+
+    background:
+      url(../img/block3/clowds-top.png) 0 -10% / 50% repeat-x,
+      url(../img/block3/clowds-bottom.png) 0 110% / 50% repeat-x, 
+      url(../img/block3/clowds-middle.png) 50% 50% / 120vw no-repeat,
+      url(../img/block3/left-shade.png) 0 0 / auto 100% no-repeat,
+      url(../img/block3/clowds-left-2.png) 0 0 / auto 100% no-repeat,
+      url(../img/block3/clowds-left-1.png) 0 0 / auto 100% no-repeat,
+      url(../img/block3/right-shade.png) 100% 0 / auto 100% no-repeat,
+      url(../img/block3/clowds-right-2.png) 100% 0 / auto 100% no-repeat,
+      url(../img/block3/clowds-right-1.png) 100% 0 / auto 100% no-repeat,
+      url(../img/block3/global-bg.png) 0 0 / 100vw no-repeat,
+    ;
+
+    &__body {
+      background: url(../img/block5/woman.png) 130% 70% / auto 70% no-repeat;
+      padding-top: qadap(232);
+      padding-bottom: qadap(177);
+      width: qadap(1550);
+    }
+
+    &__title {
+      font-size: qadap(47) !important;
+      margin-bottom: qadap(86) !important;
+    }
+  }
+  .block-5-content {
+
+
+    &__item-wrapper {
+      margin-right: qadap(92);
+      margin-bottom: qadap(86);
+    }
+
+    &__item-wrapper::after {
+      top: qadap(13);
+      left: qadap(13);
+      width: qadap(26);
+      height: qadap(26);
+    }
+    &__item {
+      width: qadap(348);
+      height: qadap(273);
+      padding: qadap(40) qadap(25) qadap(53) qadap(30);
+      border-bottom: qadap(1) solid #db8072;
+      border-right: qadap(1) solid #db8072;
+      border-radius: qadap(10);
+    }
+
+    &__item::after {
+      width: 100%;
+      height: 100%;
+      border-bottom: qadap(1) solid #e69a92;
+      border-right: qadap(1) solid #e69a92;
+      border-radius: qadap(10);
+      bottom: qadap(-10);
+      right: qadap(-10);
+    }
+
+    &__item::before {
+      width: qadap(52);
+      height: qadap(52);
+      box-shadow: inset 0 0 qadap(10) rgb(255, 163, 155);
+    }
+
+    &__title {
+      font-size: qadap(26) !important;
+      margin-bottom: qadap(30) !important;
+    }
+
+    &__text {
+      font-size: qadap(17) !important;
+      line-height: qadap(25) !important;
+    }
+
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // =============================================================== //
 // block-4
 
@@ -934,6 +1324,7 @@ a {
 @media screen and (min-width: 1919px) {
 
   .block-4 {
+    margin-bottom: qadap(100);
 
     &__body {
       width: 1920px;
