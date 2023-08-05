@@ -301,9 +301,6 @@ a {
       margin-bottom: adap(19);
       line-height: 0;
       font-size: 0;
-      &:active {
-        filter: blur(5px);
-      }
       & img {
         width: adap(20);
         &:hover {

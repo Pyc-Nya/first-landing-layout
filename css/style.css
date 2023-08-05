@@ -302,10 +302,6 @@ a {
   line-height: 0;
   font-size: 0;
 }
-.socials-socials__item:active {
-  -webkit-filter: blur(5px);
-          filter: blur(5px);
-}
 .socials-socials__item img {
   width: calc(12.5px + 7.5 * (100vw - 1200px) / 720);
 }
