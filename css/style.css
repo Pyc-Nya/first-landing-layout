@@ -281,8 +281,8 @@ a {
   padding-left: calc(68.75px + 41.25 * (100vw - 1200px) / 720);
   padding-right: calc(68.75px + 41.25 * (100vw - 1200px) / 720);
   border-radius: calc(37.5px + 22.5 * (100vw - 1200px) / 720);
-  -webkit-box-shadow: 0 20px 20px rgba(203, 63, 48, 0.3137254902), inset 0 0 20px #fa9393;
-          box-shadow: 0 20px 20px rgba(203, 63, 48, 0.3137254902), inset 0 0 20px #fa9393;
+  -webkit-box-shadow: 0 20px 20px rgba(203, 63, 48, 0.3137254902), inset 0 0 4px 4px #dc3434;
+          box-shadow: 0 20px 20px rgba(203, 63, 48, 0.3137254902), inset 0 0 4px 4px #dc3434;
 }
 .block-1-content__button a:hover {
   background: rgb(198, 37, 31);
