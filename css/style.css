@@ -138,12 +138,14 @@ a {
   font-size: calc(18.75px + 11.25 * (100vw - 1200px) / 720);
   font-family: "MuseoSans500";
   color: #9e0e0c;
+  margin-bottom: calc(18.75px + 11.25 * (100vw - 1200px) / 720);
 }
 
 .content-text {
   font-family: "MuseoSans100";
   font-size: calc(12.5px + 7.5 * (100vw - 1200px) / 720);
   display: inline-block;
+  line-height: calc(18.75px + 11.25 * (100vw - 1200px) / 720);
 }
 
 .block-1 {
