@@ -745,6 +745,22 @@ a {
   .block-2-content__item {
     padding: calc(43.75px + 26.25 * (100vw - 320px) / 1600) calc(43.75px + 26.25 * (100vw - 320px) / 1600) calc(34.375px + 20.625 * (100vw - 320px) / 1600) calc(41.25px + 24.75 * (100vw - 320px) / 1600);
   }
+  .block-2-content__item_left-top::after {
+    left: calc(6.25px + 3.75 * (100vw - 320px) / 1600);
+    top: calc(6.25px + 3.75 * (100vw - 320px) / 1600);
+  }
+  .block-2-content__item_right-top::after {
+    right: calc(6.25px + 3.75 * (100vw - 320px) / 1600);
+    top: calc(6.25px + 3.75 * (100vw - 320px) / 1600);
+  }
+  .block-2-content__item_left-bottom::after {
+    left: calc(6.25px + 3.75 * (100vw - 320px) / 1600);
+    bottom: calc(6.25px + 3.75 * (100vw - 320px) / 1600);
+  }
+  .block-2-content__item_right-bottom::after {
+    right: calc(6.25px + 3.75 * (100vw - 320px) / 1600);
+    bottom: calc(6.25px + 3.75 * (100vw - 320px) / 1600);
+  }
   .content-left__item:nth-child(2) {
     margin-bottom: calc(25px + 15 * (100vw - 320px) / 1600);
   }

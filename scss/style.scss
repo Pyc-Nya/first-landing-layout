@@ -869,8 +869,29 @@ a {
   
     &__item {
       padding: adap(70, 320) adap(70, 320) adap(55, 320) adap(66, 320);
+    
+      &_left-top::after {
+        left: adap(10, 320);
+        top: adap(10, 320);
+      }
+  
+      &_right-top::after {
+        right: adap(10, 320);
+        top: adap(10, 320);
+      }
+  
+      &_left-bottom::after {
+        left: adap(10, 320);
+        bottom: adap(10, 320);
+      }
+  
+      &_right-bottom::after {
+        right: adap(10, 320);
+        bottom: adap(10, 320);
+      }
     }
   }
+
   .content-left {
     &__item {
       &:nth-child(2) {
