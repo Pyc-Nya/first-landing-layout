@@ -341,6 +341,7 @@ a {
 
 
 .block-2 {
+  margin-bottom: adap(127);
 
   &__wrapper {
     width: qadap(1531);
@@ -496,6 +497,14 @@ a {
       background: linear-gradient(0deg, rgba(146,66,56,1) 0%, rgba(255,99,85,1) 100%); 
       }
     }
+    
+    &:active {
+      .content-middle__button {
+        box-shadow: inset 0 0 5px rgb(249, 45, 18), 0 0 60px rgb(249, 45, 18);
+        background: rgb(216,48,27);
+        background: radial-gradient(circle, rgb(242, 59, 35) 0%, rgb(171, 42, 30) 100%); 
+      } 
+    }
   }
 
   &__button {
@@ -520,12 +529,6 @@ a {
     border-width: qadap(10) 0 qadap(10) qadap(14); /* Размеры треугольника */
     border-color: transparent transparent transparent white; /* Цвет треугольника */
     transform: translate(-50%, -50%) rotate(0deg); /* Чтобы сместить треугольник в центр кнопки */
-  }
-
-  &__button:active {
-    box-shadow: inset 0 0 5px rgb(249, 45, 18), 0 0 60px rgb(249, 45, 18);
-    background: rgb(216,48,27);
-    background: radial-gradient(circle, rgb(242, 59, 35) 0%, rgb(171, 42, 30) 100%); 
   }
 
   &__bottom-text {
@@ -553,6 +556,140 @@ a {
     }
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ============================================================= //
+// block-3
+
+.block-3 {
+  padding-top: adap(251);
+  padding-bottom: adap(180);
+  background: 
+    url(../img/block3/clowds-top.png) 0 -10% / 100% repeat-x,
+    url(../img/block3/clowds-bottom.png) 0 100% / 100% repeat-x,
+    url(../img/block3/woman.png) 10% 82% / auto 70%  no-repeat,
+    url(../img/block3/left-shade.png) 0 0 / 100% no-repeat,
+    url(../img/block3/clowds-middle.png) 50% 0 / 200% no-repeat,
+    url(../img/block3/clowds-left-2.png) 0 0 / 100% no-repeat,
+    url(../img/block3/clowds-left-1.png) 0 0 / 100% no-repeat,
+    url(../img/block3/right-shade.png) 100% 0 / 100% no-repeat,
+    url(../img/block3/clowds-right-2.png) 100% 0 / 100% no-repeat,
+    url(../img/block3/clowds-right-1.png) 100% 0 / 100% no-repeat,
+    url(../img/block3/global-bg.png) 100vw repeat-x,
+  ;
+
+  &__body {
+    padding: 0 adap(196) 0 adap(624);
+    font-family: "MuseoSans100";
+  }
+
+  &__title {
+    position: relative;
+    font-family: "MuseoSans500";
+    font-size: adap(43);
+    margin-bottom: adap(39);
+    padding: adap(26) adap(52);
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: url(../img/icons/right-quotation-sign.png) 0 0 / 100% no-repeat;
+      width: adap(37);
+      height: adap(30);
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      z-index: 2;
+      bottom: adap(8);
+      right: adap(475);
+      background: url(../img/icons/left-quotation-sign.png) 0 0 / 100% no-repeat;
+      width: adap(37);
+      height: adap(30);
+    }
+  }
+
+  &__name {
+    margin-bottom: adap(69);
+    text-align: right;
+  }
+
+  &__list {
+    padding-left: adap(57);
+    font-size: adap(30);
+    margin-bottom: adap(93);
+  }
+
+  &__button {
+    text-align: right;
+    & a {
+      color: #fffefe;
+      font-size: adap(25);
+      font-family: "CenturyGothic";
+      padding: adap(39) adap(40);
+      border-radius: adap(60);
+      background: rgb(152,15,11);
+      background: linear-gradient(0deg, rgba(152,15,11,1) 0%, rgba(245,72,42,1) 100%);
+      box-shadow: inset 0 0 adap(10) rgb(242, 76, 70), 0 adap(20) adap(60) rgb(209, 46, 41);
+    }
+
+    & a:hover {
+      background: rgb(160, 49, 46);
+      background: linear-gradient(0deg, rgb(150, 40, 36) 0%, rgb(240, 100, 75) 100%);
+      box-shadow: inset 0 0 adap(10) rgb(242, 76, 70), 0 adap(20) adap(80) rgb(241, 81, 75);
+    }
+
+    & a:active {
+      background: rgb(152,15,11);
+      background: linear-gradient(0deg, rgb(141, 18, 14) 0%, rrgb(251, 41, 4)100%);
+      box-shadow: inset 0 0 adap(10) rgb(218, 52, 47), 0 adap(20) adap(60) rgb(150, 39, 36);
+    }
+  }
+}
+.block-3-name {
+
+  &__name {
+    font-family: "MuseoSans700";
+    font-size: adap(52);
+    margin-bottom: adap(10);
+  }
+
+  &__prof {
+    font-family: "MuseoSans300";
+    font-size: adap(28);
+    color: #bb2316;
+  }
+}
+.block-3-list {
+
+  &__item {
+    margin-bottom: adap(30);
+    &:last-child {
+      margin: 0;
+    }
+  }
+}
+
 
 
 

@@ -310,6 +310,9 @@ a {
           filter: saturate(5);
 }
 
+.block-2 {
+  margin-bottom: calc(79.375px + 47.625 * (100vw - 1200px) / 720);
+}
 .block-2__wrapper {
   width: 1531px;
   margin: 0 auto;
@@ -472,6 +475,12 @@ a {
   background: -webkit-gradient(linear, left bottom, left top, from(rgb(146, 66, 56)), to(rgb(255, 99, 85)));
   background: linear-gradient(0deg, rgb(146, 66, 56) 0%, rgb(255, 99, 85) 100%);
 }
+.content-middle__wrapper:active .content-middle__button {
+  -webkit-box-shadow: inset 0 0 5px rgb(249, 45, 18), 0 0 60px rgb(249, 45, 18);
+          box-shadow: inset 0 0 5px rgb(249, 45, 18), 0 0 60px rgb(249, 45, 18);
+  background: rgb(216, 48, 27);
+  background: radial-gradient(circle, rgb(242, 59, 35) 0%, rgb(171, 42, 30) 100%);
+}
 .content-middle__button {
   position: relative;
   display: inline-block;
@@ -496,12 +505,6 @@ a {
   -webkit-transform: translate(-50%, -50%) rotate(0deg);
       -ms-transform: translate(-50%, -50%) rotate(0deg);
           transform: translate(-50%, -50%) rotate(0deg); /* Чтобы сместить треугольник в центр кнопки */
-}
-.content-middle__button:active {
-  -webkit-box-shadow: inset 0 0 5px rgb(249, 45, 18), 0 0 60px rgb(249, 45, 18);
-          box-shadow: inset 0 0 5px rgb(249, 45, 18), 0 0 60px rgb(249, 45, 18);
-  background: rgb(216, 48, 27);
-  background: radial-gradient(circle, rgb(242, 59, 35) 0%, rgb(171, 42, 30) 100%);
 }
 .content-middle__bottom-text {
   padding-top: 50px;
@@ -528,6 +531,98 @@ a {
   margin-right: 83px;
   margin-top: 20px;
   margin-bottom: 0;
+}
+
+.block-3 {
+  padding-top: calc(156.875px + 94.125 * (100vw - 1200px) / 720);
+  padding-bottom: calc(112.5px + 67.5 * (100vw - 1200px) / 720);
+  background: url(../img/block3/clowds-top.png) 0 -10%/100% repeat-x, url(../img/block3/clowds-bottom.png) 0 100%/100% repeat-x, url(../img/block3/woman.png) 10% 82%/auto 70% no-repeat, url(../img/block3/left-shade.png) 0 0/100% no-repeat, url(../img/block3/clowds-middle.png) 50% 0/200% no-repeat, url(../img/block3/clowds-left-2.png) 0 0/100% no-repeat, url(../img/block3/clowds-left-1.png) 0 0/100% no-repeat, url(../img/block3/right-shade.png) 100% 0/100% no-repeat, url(../img/block3/clowds-right-2.png) 100% 0/100% no-repeat, url(../img/block3/clowds-right-1.png) 100% 0/100% no-repeat, url(../img/block3/global-bg.png) 100vw repeat-x;
+}
+.block-3__body {
+  padding: 0 calc(122.5px + 73.5 * (100vw - 1200px) / 720) 0 calc(390px + 234 * (100vw - 1200px) / 720);
+  font-family: "MuseoSans100";
+}
+.block-3__title {
+  position: relative;
+  font-family: "MuseoSans500";
+  font-size: calc(26.875px + 16.125 * (100vw - 1200px) / 720);
+  margin-bottom: calc(24.375px + 14.625 * (100vw - 1200px) / 720);
+  padding: calc(16.25px + 9.75 * (100vw - 1200px) / 720) calc(32.5px + 19.5 * (100vw - 1200px) / 720);
+}
+.block-3__title::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(../img/icons/right-quotation-sign.png) 0 0/100% no-repeat;
+  width: calc(23.125px + 13.875 * (100vw - 1200px) / 720);
+  height: calc(18.75px + 11.25 * (100vw - 1200px) / 720);
+}
+.block-3__title::before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  bottom: calc(5px + 3 * (100vw - 1200px) / 720);
+  right: calc(296.875px + 178.125 * (100vw - 1200px) / 720);
+  background: url(../img/icons/left-quotation-sign.png) 0 0/100% no-repeat;
+  width: calc(23.125px + 13.875 * (100vw - 1200px) / 720);
+  height: calc(18.75px + 11.25 * (100vw - 1200px) / 720);
+}
+.block-3__name {
+  margin-bottom: calc(43.125px + 25.875 * (100vw - 1200px) / 720);
+  text-align: right;
+}
+.block-3__list {
+  padding-left: calc(35.625px + 21.375 * (100vw - 1200px) / 720);
+  font-size: calc(18.75px + 11.25 * (100vw - 1200px) / 720);
+  margin-bottom: calc(58.125px + 34.875 * (100vw - 1200px) / 720);
+}
+.block-3__button {
+  text-align: right;
+}
+.block-3__button a {
+  color: #fffefe;
+  font-size: calc(15.625px + 9.375 * (100vw - 1200px) / 720);
+  font-family: "CenturyGothic";
+  padding: calc(24.375px + 14.625 * (100vw - 1200px) / 720) calc(25px + 15 * (100vw - 1200px) / 720);
+  border-radius: calc(37.5px + 22.5 * (100vw - 1200px) / 720);
+  background: rgb(152, 15, 11);
+  background: -webkit-gradient(linear, left bottom, left top, from(rgb(152, 15, 11)), to(rgb(245, 72, 42)));
+  background: linear-gradient(0deg, rgb(152, 15, 11) 0%, rgb(245, 72, 42) 100%);
+  -webkit-box-shadow: inset 0 0 calc(6.25px + 3.75 * (100vw - 1200px) / 720) rgb(242, 76, 70), 0 calc(12.5px + 7.5 * (100vw - 1200px) / 720) calc(37.5px + 22.5 * (100vw - 1200px) / 720) rgb(209, 46, 41);
+          box-shadow: inset 0 0 calc(6.25px + 3.75 * (100vw - 1200px) / 720) rgb(242, 76, 70), 0 calc(12.5px + 7.5 * (100vw - 1200px) / 720) calc(37.5px + 22.5 * (100vw - 1200px) / 720) rgb(209, 46, 41);
+}
+.block-3__button a:hover {
+  background: rgb(160, 49, 46);
+  background: -webkit-gradient(linear, left bottom, left top, from(rgb(150, 40, 36)), to(rgb(240, 100, 75)));
+  background: linear-gradient(0deg, rgb(150, 40, 36) 0%, rgb(240, 100, 75) 100%);
+  -webkit-box-shadow: inset 0 0 calc(6.25px + 3.75 * (100vw - 1200px) / 720) rgb(242, 76, 70), 0 calc(12.5px + 7.5 * (100vw - 1200px) / 720) calc(50px + 30 * (100vw - 1200px) / 720) rgb(241, 81, 75);
+          box-shadow: inset 0 0 calc(6.25px + 3.75 * (100vw - 1200px) / 720) rgb(242, 76, 70), 0 calc(12.5px + 7.5 * (100vw - 1200px) / 720) calc(50px + 30 * (100vw - 1200px) / 720) rgb(241, 81, 75);
+}
+.block-3__button a:active {
+  background: rgb(152, 15, 11);
+  background: -webkit-gradient(linear, left bottom, left top, from(rgb(141, 18, 14)), to(rrgb(251, 41, 4)));
+  background: linear-gradient(0deg, rgb(141, 18, 14) 0%, rrgb(251, 41, 4) 100%);
+  -webkit-box-shadow: inset 0 0 calc(6.25px + 3.75 * (100vw - 1200px) / 720) rgb(218, 52, 47), 0 calc(12.5px + 7.5 * (100vw - 1200px) / 720) calc(37.5px + 22.5 * (100vw - 1200px) / 720) rgb(150, 39, 36);
+          box-shadow: inset 0 0 calc(6.25px + 3.75 * (100vw - 1200px) / 720) rgb(218, 52, 47), 0 calc(12.5px + 7.5 * (100vw - 1200px) / 720) calc(37.5px + 22.5 * (100vw - 1200px) / 720) rgb(150, 39, 36);
+}
+
+.block-3-name__name {
+  font-family: "MuseoSans700";
+  font-size: calc(32.5px + 19.5 * (100vw - 1200px) / 720);
+  margin-bottom: calc(6.25px + 3.75 * (100vw - 1200px) / 720);
+}
+.block-3-name__prof {
+  font-family: "MuseoSans300";
+  font-size: calc(17.5px + 10.5 * (100vw - 1200px) / 720);
+  color: #bb2316;
+}
+
+.block-3-list__item {
+  margin-bottom: calc(18.75px + 11.25 * (100vw - 1200px) / 720);
+}
+.block-3-list__item:last-child {
+  margin: 0;
 }
 
 @media screen and (max-width: 1919px) {
