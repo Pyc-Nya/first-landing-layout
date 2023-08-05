@@ -85,6 +85,13 @@ body {
 
 a {
   color: #330f06;
+  outline: none;
+  &:hover {
+    outline: none;
+  }
+  &:active {
+    outline: none;
+  }
 }
 
 .wrapper {

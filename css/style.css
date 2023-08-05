@@ -121,6 +121,13 @@ body {
 
 a {
   color: #330f06;
+  outline: none;
+}
+a:hover {
+  outline: none;
+}
+a:active {
+  outline: none;
 }
 
 .block-1 {
