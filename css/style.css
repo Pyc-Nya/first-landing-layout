@@ -1843,4 +1843,7 @@ a {
   .socials-socials__item img {
     width: 20px;
   }
+  .socials-socials__item:nth-child(2) img {
+    width: 23px;
+  }
 }/*# sourceMappingURL=style.css.map */

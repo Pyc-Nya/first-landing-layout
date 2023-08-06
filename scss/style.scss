@@ -2515,12 +2515,18 @@ a {
   
   .socials-socials {
   
-      &__item {
-        margin-bottom: 19px;
-        & img {
-          width: 20px;
-        }
+    &__item {
+      margin-bottom: 19px;
+      & img {
+        width: 20px;
       }
+    }
+    
+    &__item:nth-child(2) {
+      & img {
+        width: 23px;
+      }
+    }
   }
   
 }
