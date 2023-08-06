@@ -330,6 +330,9 @@ a {
   -webkit-filter: saturate(5);
           filter: saturate(5);
 }
+.socials-socials__item:nth-child(2) img {
+  width: calc(14.375px + 8.625 * (100vw - 1200px) / 720);
+}
 
 .block-2 {
   margin-bottom: 127px;
@@ -1745,6 +1748,9 @@ a {
   .socials-socials__item img:hover {
     -webkit-filter: saturate(5);
             filter: saturate(5);
+  }
+  .socials-socials__item:nth-child(2) img {
+    width: calc(31.25px + 18.75 * (100vw - 320px) / 1600);
   }
 }
 @media screen and (min-width: 1921px) {

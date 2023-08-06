@@ -327,6 +327,12 @@ a {
         }
       }
 		}
+    
+    &__item:nth-child(2) {
+      & img {
+        width: adap(23);
+      }
+    }
 }
 
 
@@ -2343,18 +2349,24 @@ a {
     display: flex;
     justify-content: center;
   
-      &__item {
-        flex: 1;
-        margin-bottom: adap(19);
-        line-height: 0;
-        font-size: 0;
-        & img {
-          width: adap(40, 320);
-          &:hover {
-            filter: saturate(5);
-          }
+    &__item {
+      flex: 1;
+      margin-bottom: adap(19);
+      line-height: 0;
+      font-size: 0;
+      & img {
+        width: adap(40, 320);
+        &:hover {
+          filter: saturate(5);
         }
       }
+    }
+    
+    &__item:nth-child(2) {
+      & img {
+        width: adap(50, 320);
+      }
+    }
   }
   
 }
