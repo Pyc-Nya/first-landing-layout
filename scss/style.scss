@@ -1042,6 +1042,7 @@ a {
     width: adap(305);
     height: adap(635);
     margin-right: adap(30);
+    border-radius: adap(40);
     &:last-child {
       margin: 0;
     }
@@ -1251,6 +1252,7 @@ a {
       width: qadap(305);
       height: qadap(635);
       margin-right: qadap(30);
+      border-radius: qadap(40);
       &:last-child {
         margin: 0;
       }
@@ -1277,6 +1279,18 @@ a {
   }
     
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
