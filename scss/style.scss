@@ -2172,19 +2172,49 @@ a {
 // =============================================================//
 // block-1
 
-@media screen and (max-width: 1199px) {
-
-  .header {
-    font-size: adap(20, 320);
+@media screen and (max-width: 761px) {
+  
+  .block-1 {
+    
+    background: 
+      url(../img/block1/clowds-bottom-2.png) 0 bottom / auto 10vh repeat-x,
+      url(../img/block1/woman-01.png) 50% 100% / auto 55% no-repeat,
+      url(../img/block3/clowds-middle.png) 50% 50% / auto 100vh no-repeat,
+      url(../img/block1/Tower-Bridge.png) 50% 100% / auto 60% no-repeat,
+      url(../img/block1/global-bg.png) 0 0 / 120vw 120vh no-repeat,
+    ;
+  
+      &__content {
+        padding-bottom: adap(80, 320);
+      }
   }
-
+  
+  
+  .header {
+    font-size: adap(27, 320);
+  
+      &__body {
+        display: flex;
+      }
+  
+      &__name {
+        flex: 4;
+      }
+  
+      &__menu {
+        flex: 8;
+      }
+  
+      &__socials {
+        flex: 3;
+      }
+  }
   .header-name {
   
       &__items {
         padding-top: adap(15, 320);
-        padding-left: adap(100, 320);
+        padding-left: adap(15, 320);
       }
-
   
       &__prof {
         font-size: adap(20, 320);
@@ -2192,133 +2222,163 @@ a {
   }
   
   .header-menu {
-    font-size: adap(18, 320);
+    font-size: adap(16, 320);
+
+    &__wrapper {
+      display: flex;
+      flex-wrap: wrap;
+    }
   
-      &__body {
-        padding-top: adap(27, 320);
+    &__body {
+      display: flex;
+      justify-content: center;
+      flex: 100%;
+      padding-top: adap(27, 320);
+      padding-left: adap(10, 320);
+    }
+
+    &__item {
+      width: adap(110, 320);
+      text-align: center;
+      border: adap(2, 320) solid #bd6961;
+      border-radius: adap(20, 320);
+      background: #d4625828;
+      padding: adap(10, 320);
+      margin-right: adap(20, 320);
+      margin-bottom: adap(15, 320);
+      &:last-child {
+        padding: adap(10, 320);
+        text-align: center;
       }
-  
-      &__item {
-        margin-right: adap(52, 320);
-      }
+    }
   }
   .header-socials {
-    padding-top: adap(21);
-  
+    padding-top: adap(21, 320);
   
       &__phone {
         padding-right: adap(12, 320);
-        margin-bottom: adap(29, 320);
       }
   }
   .socials-phone {
   
       &__phone {
         font-size: adap(24, 320);
+        margin-bottom: adap(9, 320);
+        &_761 {
+          display: none;
+        }
       }
   
       &__button {
         font-size: adap(14, 320);
       }
   }
-
-  .block-1-content {
-    font-size: adap(47, 320);
   
+  .block-1-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: adap(47, 320);
+    width: calc(100% - 40px);
+    margin: 0 auto;
+  
+    &__content-text {
+      padding-left: 0;
+      order: 2;
+      flex: auto;
+      text-align: left;
+      text-align: center !important;
+    }
+  
+    &__socials {
+      width: 70%;
+      margin: 0 auto;
+      order: 1;
+      flex: auto;
+      text-align: center;
+      padding-right: 0;
+      padding-top: adap(29, 320);
+    }
     
     &__invite {
-      font-size: adap(25, 320);
-      padding-top: adap(50, 320);
+      font-size: adap(30, 720);
+      padding-top: adap(78);
     }
   
     &__title {
-      font-size: adap(30, 320);
+      font-size: adap(38, 720);
       padding-top: adap(20, 320);
     }
   
     &__online {
-      font-size: adap(20, 320);
-      padding-top: adap(20, 320);
+      font-size: adap(24, 720);
+      padding-top: adap(15, 320);
     }
   
     &__text {
-      padding-top: adap(40, 320);
-      font-size: adap(18, 320);
+      padding-top: adap(30, 320);;
+      font-size: adap(20, 620);
       & p {
-        margin-bottom: adap(15);
+        margin-bottom: adap(15, 320);
       }
     }
   
     &__button {
-      font-size: adap(18, 320);
-      padding-top: adap(80, 320);
+      font-size: adap(30, 720);
+      padding-top: adap(500, 320);
       & a {
+        padding: adap(40, 320) adap(110, 320);
         border-radius: adap(60, 320);
-        box-shadow: 0 5px 10px #9e0e0c;
+        box-shadow: 0 20px 20px #cb3f3050, inset 0 0 4px 4px #dc3434;
+  
+        &:active {
+          box-shadow: 0 adap(20) adap(30) #ff2911b8;
+        }
+  
       }
     }
   }
   
   .socials-socials {
+    display: flex;
+    justify-content: center;
   
       &__item {
-        margin-bottom: adap(19, 320);
+        flex: 1;
+        margin-bottom: adap(19);
         line-height: 0;
+        font-size: 0;
         & img {
-          width: adap(20, 320);
+          width: adap(40, 320);
+          &:hover {
+            filter: saturate(5);
+          }
         }
       }
   }
+  
 }
 
-@media screen and (max-width: 761px) {
-  
-  .block-1 {
-    background-size: auto 100%;
-  }
 
-  .header-name {
-  
-    &__items {
-      padding-top: adap(15, 320);
-      padding-left: adap(80, 320);
-    }
-  }
-  .socials-phone {
 
-		&__phone {
-      &_761 {
-        display: inline-block;
-      }
-      &_1200 {
-        display: none;
-      }
-		}
 
-  }
-}
 
-@media screen and (max-width: 389px) {
-  
-  .block-1 {
-    background-position: 0;
-  }
 
-  .header-name {
-  
-    &__items {
-      padding-top: adap(15, 320);
-      padding-left: adap(10, 320);
-    }
-  }
-  .block-1-content {
-    &__button {
-      & a {
-        box-shadow: 0 5px 10px #9e0e0c;
-      }
-    }
-  }
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media screen and (min-width: 1921px) {
