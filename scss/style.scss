@@ -1019,12 +1019,279 @@ a {
 
 
 
+// ================================================================= // 
+// block-6
+
+.block-6 {
+
+  &__body {
+    padding-top: adap(95);
+  }
+
+  &__title {
+    margin-bottom: adap(68);
+  }
+
+  &__reviews {
+    display: flex;
+    justify-content: center;
+    margin-bottom: adap(136);
+  }
+
+  &__item {
+    width: adap(305);
+    height: adap(635);
+    margin-right: adap(30);
+    &:last-child {
+      margin: 0;
+    }
+    &:nth-child(1) {
+      background: url(../img/block6/block-6__item-01.png) 0 0 / auto 100% no-repeat;
+    }
+    &:nth-child(2) {
+      background: url(../img/block6/block-6__item-02.png) 0 0 / auto 100% no-repeat;
+    }
+    &:nth-child(3) {
+      background: url(../img/block6/block-6__item-03.png) 0 0 / auto 100% no-repeat;
+    }
+    &:nth-child(4) {
+      background: url(../img/block6/block-6__item-04.png) 0 0 / auto 100% no-repeat;
+    }
+    &:nth-child(5) {
+      background: url(../img/block6/block-6__item-05.png) 0 0 / auto 100% no-repeat;
+    }
+  }
+
+  &__button {
+    text-align: center;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 // медиа запросы
 // ============================================================ //
+
+
+// ================================================================= // 
+// block-6
+
+
+@media screen and (max-width: 761px) {
+  .block-6 {
+
+    &__body {
+      padding: adap(95, 320) adap(30, 320);
+    }
   
+    &__title {
+      margin-bottom: adap(68, 320);
+      font-size: adap(38, 320);
+    }
+  
+    &__reviews {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-bottom: adap(100, 320);
+    }
+  
+    &__item {
+      width: adap(300, 320);
+      height: adap(350, 320);
+      border-radius: adap(30, 320);
+      border: adap(2, 320) solid #f7cea8;
+      margin-bottom: adap(30, 320);
+      &:nth-child(1) {
+        background: url(../img/block6/761/block-6__item-01.png) 50% 50% / 95% no-repeat;
+      }
+      &:nth-child(2) {
+        background: url(../img/block6/761/block-6__item-02.png) 50% 50% / 95% no-repeat;
+      }
+      &:nth-child(3) {
+        background: url(../img/block6/761/block-6__item-03.png) 50% 50% / 95% no-repeat;
+      }
+      &:nth-child(4) {
+        background: url(../img/block6/761/block-6__item-04.png) 50% 50% / 95% no-repeat;
+      }
+      &:nth-child(5) {
+        margin-bottom: adap(30, 320);
+        margin-right: adap(10, 320);
+        background: url(../img/block6/761/block-6__item-05.png) 50% 50% / 95% no-repeat;
+      }
+    }
+  
+    &__button {
+      text-align: center;
+    }
+  }
+}
+
+
+@media screen and (min-width: 1919px) {
+
+  .block-6 {
+
+    &__body {
+      width: qadap(1920);
+      margin: 0 auto;
+      padding-top: qadap(95);
+    }
+  
+    &__title {
+      margin-bottom: qadap(68);
+      font-size: qadap(47);
+    }
+  
+    &__reviews {
+      display: flex;
+      justify-content: center;
+      margin-bottom: qadap(136);
+    }
+  
+    &__item {
+      width: qadap(305);
+      height: qadap(635);
+      margin-right: qadap(30);
+      &:last-child {
+        margin: 0;
+      }
+      &:nth-child(1) {
+        background: url(../img/block6/block-6__item-01.png) 0 0 / auto 100% no-repeat;
+      }
+      &:nth-child(2) {
+        background: url(../img/block6/block-6__item-02.png) 0 0 / auto 100% no-repeat;
+      }
+      &:nth-child(3) {
+        background: url(../img/block6/block-6__item-03.png) 0 0 / auto 100% no-repeat;
+      }
+      &:nth-child(4) {
+        background: url(../img/block6/block-6__item-04.png) 0 0 / auto 100% no-repeat;
+      }
+      &:nth-child(5) {
+        background: url(../img/block6/block-6__item-05.png) 0 0 / auto 100% no-repeat;
+      }
+    }
+  
+    &__button {
+      text-align: center;
+    }
+  }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // ============================================================ //
 // block-5
@@ -1551,8 +1818,7 @@ a {
     
     background: 
     url(../img/block3/clowds-top.png) 0 0% / 40% repeat-x,
-    url(../img/block3/clowds-bottom.png) 0 100% / 40% repeat-x,
-    url(../img/block3/woman.png) 10% 100% / auto 70%  no-repeat,
+    url(../img/block3/clowds-bottom.png) 0 100% / 1200px repeat-x,
     url(../img/block3/left-shade.png) 0 0 / 100% no-repeat,
     url(../img/block3/clowds-middle.png) 50% 0 / 200% no-repeat,
     url(../img/block3/clowds-left-2.png) 0 0 / 100% no-repeat,
@@ -1564,10 +1830,11 @@ a {
   ;
   
     padding-top: qadap(251);
-    padding-bottom: qadap(180);
+    padding-bottom: qadap(40);
     margin-bottom: 78px;
 
     &__body {
+      background: url(../img/block3/woman.png) 10% 100% / auto 90%  no-repeat;
       width: 1920px;
       margin: 0 auto;
       padding: 0 qadap(196) 0 qadap(624);
@@ -2046,7 +2313,7 @@ a {
   .block-1 {
     background:
     url(../img/block1/clowds-bottom-2.png) 0 bottom / auto 10vh repeat-x,
-    url(../img/block1/woman.png) 95% 0 / auto 100% no-repeat,
+    url(../img/block1/woman-01.png) 95% 0 / auto 100% no-repeat,
     url(../img/block1/clowds-right.png) 100% 0 / auto 100% no-repeat,
     url(../img/block1/clowds-left.png) 0 0 / auto 100% no-repeat,
     url(../img/block1/Tower-Bridge.png) 103% 0 / auto 100% no-repeat,

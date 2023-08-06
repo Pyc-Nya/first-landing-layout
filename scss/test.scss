@@ -1,131 +1,47 @@
-@media screen and (min-width: 1919px) {
-  .block-5 {
+.block-6 {
 
-    background:
-      url(../img/block3/clowds-top.png) 0 -10% / 100% repeat-x,
-      url(../img/block3/clowds-bottom.png) 0 110% / 100% repeat-x, 
-      url(../img/block5/woman.png) 100% 90% / auto 70% no-repeat,
-      url(../img/block3/clowds-middle.png) 50% 50% / 120vw no-repeat,
-      url(../img/block3/left-shade.png) 0 0 / auto 100% no-repeat,
-      url(../img/block3/clowds-left-2.png) 0 0 / auto 100% no-repeat,
-      url(../img/block3/clowds-left-1.png) 0 0 / auto 100% no-repeat,
-      url(../img/block3/right-shade.png) 100% 0 / auto 100% no-repeat,
-      url(../img/block3/clowds-right-2.png) 100% 0 / auto 100% no-repeat,
-      url(../img/block3/clowds-right-1.png) 100% 0 / auto 100% no-repeat,
-      url(../img/block3/global-bg.png) 0 0 / 100vw no-repeat,
-    ;
+  &__body {
+    width: 1920px;
+    margin: 0 auto;
+    padding-top: qadap(95);
+  }
 
-    &__body {
-      padding-top: qadap(232);
-      padding-bottom: qadap(177);
-      width: qadap(1550);
-      margin: 0 auto;
+  &__title {
+    margin-bottom: qadap(68);
+  }
+
+  &__reviews {
+    display: flex;
+    justify-content: center;
+    margin-bottom: qadap(136);
+  }
+
+  &__item {
+    width: qadap(305);
+    height: qadap(635);
+    margin-right: qadap(30);
+    &:last-child {
+      margin: 0;
     }
-
-    &__title {
-      margin-bottom: qadap(86) !important;
+    &:nth-child(1) {
+      background: url(../img/block6/block-6__item-01.png) 0 0 / auto 100% no-repeat;
     }
-
-    &__content {
+    &:nth-child(2) {
+      background: url(../img/block6/block-6__item-02.png) 0 0 / auto 100% no-repeat;
+    }
+    &:nth-child(3) {
+      background: url(../img/block6/block-6__item-03.png) 0 0 / auto 100% no-repeat;
+    }
+    &:nth-child(4) {
+      background: url(../img/block6/block-6__item-04.png) 0 0 / auto 100% no-repeat;
+    }
+    &:nth-child(5) {
+      background: url(../img/block6/block-6__item-05.png) 0 0 / auto 100% no-repeat;
     }
   }
-  .block-5-content {
 
-    &__body {
-    }
-
-    &__line-1 {
-      display: flex;
-      text-align: center;
-    }
-
-    &__line-2 {
-      display: flex;
-      text-align: center;
-
-      .block-5-content__item-wrapper {
-        margin-bottom: 0;
-      }
-    }
-
-    &__item-wrapper {
-      margin-right: qadap(92);
-      margin-bottom: qadap(86);
-      position: relative;
-    }
-
-    &__item-wrapper::after {
-      content: '';
-      position: absolute;
-      z-index: 3;
-      top: qadap(13);
-      left: qadap(13);
-      width: qadap(26);
-      height: qadap(26);
-    }
-
-    &__item-wrapper_01::after {
-      background: url(../img/icons/block-5__item-01.png) 50% 50% / contain no-repeat;
-    }
-    &__item-wrapper_02::after {
-      background: url(../img/icons/block-5__item-02.png) 50% 50% / contain no-repeat;
-    }
-    &__item-wrapper_03::after {
-      background: url(../img/icons/block-5__item-03.png) 50% 50% / contain no-repeat;
-    }
-    &__item-wrapper_04::after {
-      background: url(../img/icons/block-5__item-04.png) 50% 50% / contain no-repeat;
-    }
-    &__item-wrapper_05::after {
-      background: url(../img/icons/block-5__item-05.png) 50% 50% / contain no-repeat;
-    }
-
-    &__item {
-      position: relative;
-      width: qadap(348);
-      height: qadap(273);
-      background: #ffc8c8;
-      padding: qadap(40) qadap(25) qadap(53) qadap(30);
-      background: rgb(236,202,191);
-      background: linear-gradient(330deg, rgba(236,202,191,1) 0%, rgba(255,255,255,0) 50%); 
-      border-bottom: qadap(1) solid #db8072;
-      border-right: qadap(1) solid #db8072;
-      border-radius: qadap(10);
-    }
-
-    &__item::after {
-      content: '';
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      border-bottom: qadap(1) solid #e69a92;
-      border-right: qadap(1) solid #e69a92;
-      border-radius: qadap(10);
-      bottom: qadap(-10);
-      right: qadap(-10);
-    }
-
-    &__item::before {
-      content: '';
-      position: absolute;
-      z-index: 1;
-      top: 0;
-      left: 0;
-      width: qadap(52);
-      height: qadap(52);
-      border-radius: 50%;
-      background: rgb(192,58,46);
-      background: linear-gradient(0deg, rgba(192,58,46,1) 0%, rgba(248,84,57,1) 100%);
-      box-shadow: inset 0 0 qadap(10) rgb(255, 163, 155);
-    }
-
-    &__title {
-      font-size: qadap(26);
-    }
-
-    &__text {
-      font-size: qadap(17);
-    }
-
+  &__button {
+    text-align: center;
   }
 }
+
