@@ -1163,10 +1163,7 @@ a {
     margin-bottom: calc(37.5px + 22.5 * (100vw - 320px) / 1600);
   }
   .block-4__button {
-    font-size: calc(13.75px + 8.25 * (100vw - 320px) / 1600) !important;
-  }
-  .block-4__button a {
-    padding: calc(12.5px + 7.5 * (100vw - 320px) / 1600) calc(18.75px + 11.25 * (100vw - 320px) / 1600) !important;
+    padding-top: calc(62.5px + 37.5 * (100vw - 320px) / 1600) !important;
   }
   .block-4-content__body {
     padding: 0 calc(115.625px + 69.375 * (100vw - 1200px) / 720);

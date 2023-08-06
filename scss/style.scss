@@ -1553,10 +1553,11 @@ a {
     }
 
     &__button {
-      font-size: adap(22, 320) !important;
-      & a {
-        padding: adap(20, 320) adap(30, 320)  !important;
-      }
+      // font-size: adap(22, 320) !important;
+      padding-top: adap(100, 320) !important;
+      // & a {
+      //   padding: adap(20, 320) adap(30, 320)  !important;
+      // }
     }
 
   }
