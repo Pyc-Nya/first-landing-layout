@@ -900,7 +900,7 @@ a {
 
 @media screen and (max-width: 761px) {
   .block-6__body {
-    padding: calc(59.375px + 35.625 * (100vw - 320px) / 1600) calc(18.75px + 11.25 * (100vw - 320px) / 1600);
+    padding: calc(59.375px + 35.625 * (100vw - 320px) / 1600) calc(18.75px + 11.25 * (100vw - 320px) / 1600) 0;
   }
   .block-6__title {
     margin-bottom: calc(42.5px + 25.5 * (100vw - 320px) / 1600);
