@@ -2070,6 +2070,7 @@ a {
   .block-2 {
   
     &__title {
+      padding-top: adap(50, 320);
       font-size: adap(38, 320);
       margin-bottom: adap(49, 320);
     }

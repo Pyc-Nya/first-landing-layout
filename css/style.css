@@ -1485,6 +1485,7 @@ a {
 }
 @media screen and (max-width: 761px) {
   .block-2__title {
+    padding-top: calc(31.25px + 18.75 * (100vw - 320px) / 1600);
     font-size: calc(23.75px + 14.25 * (100vw - 320px) / 1600);
     margin-bottom: calc(30.625px + 18.375 * (100vw - 320px) / 1600);
   }
