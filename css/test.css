@@ -1,43 +1,79 @@
-.block-6__body {
-  width: 1920px;
-  margin: 0 auto;
-  padding-top: qadap(95);
-}
-.block-6__title {
-  margin-bottom: qadap(68);
-}
-.block-6__reviews {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: qadap(136);
-}
-.block-6__item {
-  width: qadap(305);
-  height: qadap(635);
-  margin-right: qadap(30);
-}
-.block-6__item:last-child {
-  margin: 0;
-}
-.block-6__item:nth-child(1) {
-  background: url(../img/block6/block-6__item-01.png) 0 0/auto 100% no-repeat;
-}
-.block-6__item:nth-child(2) {
-  background: url(../img/block6/block-6__item-02.png) 0 0/auto 100% no-repeat;
-}
-.block-6__item:nth-child(3) {
-  background: url(../img/block6/block-6__item-03.png) 0 0/auto 100% no-repeat;
-}
-.block-6__item:nth-child(4) {
-  background: url(../img/block6/block-6__item-04.png) 0 0/auto 100% no-repeat;
-}
-.block-6__item:nth-child(5) {
-  background: url(../img/block6/block-6__item-05.png) 0 0/auto 100% no-repeat;
-}
-.block-6__button {
-  text-align: center;
+@media screen and (min-width: 1919px) {
+  .block-7 {
+    background: url(../img/block3/clowds-top.png) 0 0%/100% repeat-x, url(../img/block3/clowds-bottom.png) 0 100%/100% repeat-x, url(../img/block7/flag.png) 0 50%/auto 80% no-repeat, url(../img/block3/clowds-middle.png) 50% 50%/120vw auto no-repeat, url(../img/block3/clowds-right-2.png) 0 100%/auto 100% no-repeat, url(../img/block3/clowds-right-1.png) 0 100%/auto 100% no-repeat, url(../img/block3/left-shade.png) 0 0/auto 100% no-repeat, url(../img/block3/clowds-left-2.png) 0 0/auto 100% no-repeat, url(../img/block3/clowds-left-1.png) 0 0/auto 100% no-repeat, url(../img/block3/global-bg.png) 0 0/120vw auto no-repeat, url(../img/block3/right-shade.png) 100% 100%/auto 100% no-repeat, url(../img/block7/big-ben.png) 110% 110%/auto 40% no-repeat;
+  }
+  .block-7__body {
+    padding-top: qadap(265);
+    padding-bottom: qadap(235);
+  }
+  .block-7__title {
+    margin-bottom: qadap(100);
+  }
+  .block-7-content__body {
+    text-align: center;
+    width: qadap(1512);
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .block-7-content__line-01 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .block-7-content__line-01 .block-7-content__item-wrapper:first-child {
+    margin-left: 0;
+  }
+  .block-7-content__line-02 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .block-7-content__line-02 .block-7-content__item-wrapper:first-child {
+    margin-left: 0;
+  }
+  .block-7-content__line-03 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: qadap(180);
+  }
+  .block-7-content__line-03 .block-7-content__item-wrapper:first-child {
+    margin-left: 0;
+  }
+  .block-7-content__line-03 .block-7-content__item-wrapper {
+    margin-left: qadap(42);
+    margin-bottom: 0;
+  }
+  .block-7-content__item-wrapper {
+    margin: 0;
+    margin-left: qadap(118);
+    margin-bottom: qadap(67);
+  }
+  .block-7-content__item-wrapper::after {
+    font-family: "MuseoSans100";
+    font-size: qadap(25);
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 50%;
+  }
+  .block-7-content__item-wrapper_03 .block-7-content__item {
+    padding-top: qadap(12);
+  }
 }/*# sourceMappingURL=test.css.map */

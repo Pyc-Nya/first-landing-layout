@@ -97,6 +97,7 @@ a {
 }
 
 .content-title {
+  text-align: center;
   font-size: adap(30);
   font-family: "MuseoSans500";
   color: #9e0e0c;
@@ -104,6 +105,7 @@ a {
 }
 
 .content-text {
+  text-align: center;
   font-family: "MuseoSans100";
   font-size: adap(20);
   display: inline-block;
@@ -1032,6 +1034,7 @@ a {
 
   &__body {
     padding-top: adap(95);
+    margin-bottom: adap(55);
   }
 
   &__title {
@@ -1094,7 +1097,143 @@ a {
 
 
 
+// ================================================================= // 
+// block-7
 
+
+.block-7 {
+  background:
+    url(../img/block3/clowds-top.png) 0 0% / 100% repeat-x,
+    url(../img/block3/clowds-bottom.png) 0 100% / 100% repeat-x, 
+    url(../img/block7/flag.png) 0 50% / auto 80% no-repeat,
+    url(../img/block3/clowds-middle.png) 50% 50% / 120vw auto no-repeat,
+    url(../img/block3/clowds-right-2.png) 0 100% / auto 100% no-repeat,
+    url(../img/block3/clowds-right-1.png) 0 100% / auto 100% no-repeat,
+    url(../img/block3/left-shade.png) 0 0 / auto 100% no-repeat,
+    url(../img/block3/clowds-left-2.png) 0 0 / auto 100% no-repeat,
+    url(../img/block3/clowds-left-1.png) 0 0 / auto 100% no-repeat,
+    url(../img/block3/global-bg.png) 0 0 / 120vw auto no-repeat,
+    url(../img/block3/right-shade.png) 100% 100% / auto 100% no-repeat,
+    url(../img/block7/big-ben.png) 110% 110% / auto 40% no-repeat,
+  ;
+
+  &__body {
+    padding-top: adap(265);
+    padding-bottom: adap(235);
+  }
+
+  &__title {
+    margin-bottom: adap(100);
+  }
+
+  &__content {
+  }
+}
+
+.block-7-content {
+
+  
+  &__body {
+    text-align: center;
+    width: adap(1512);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  &__line-01 {
+    display: flex;
+
+    .block-7-content__item-wrapper:first-child {
+      margin-left: 0;
+    }
+  }
+
+  &__line-02 {
+    display: flex;
+    .block-7-content__item-wrapper:first-child {
+      margin-left: 0;
+    }
+  }
+
+  &__line-03 {
+    display: flex;
+    margin-right: adap(180);
+    .block-7-content__item-wrapper:first-child {
+      margin-left: 0;
+    }
+    .block-7-content__item-wrapper {
+      margin-left: adap(42);
+      margin-bottom: 0;
+    }
+  }
+
+  &__item-wrapper {
+    margin: 0;
+    margin-left: adap(118);
+    margin-bottom: adap(67);
+
+    &::after {
+      font-family: "MuseoSans100";
+      font-size: adap(25);
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+    }
+
+    &_01::after {
+      content: '1';
+    }
+
+    &_02::after {
+      content: '2';
+    }
+
+    &_03::after {
+      content: '3';
+    }
+
+    &_04::after {
+      content: '4';
+    }
+
+    &_05::after {
+      content: '5';
+    }
+
+    &_06::after {
+      content: '6';
+    }
+
+    &_07::after {
+      content: '7';
+    }
+
+    &_08::after {
+      content: '8';
+    }
+
+    &_03 {
+      .block-7-content__item {
+        padding-top: adap(12);
+      }
+    }
+
+  }
+
+  &__item {
+  }
+
+  &__title {
+  }
+
+  &__text {
+
+  }
+}
 
 
 
@@ -1178,6 +1317,185 @@ a {
 
 
 // ================================================================= // 
+// block-7
+
+@media screen and (max-width: 761px) {
+  
+  .block-7 {
+    background:
+      url(../img/block3/clowds-top.png) 0 0% / auto 20vh repeat-x,
+      url(../img/block3/clowds-bottom.png) 0 100% / auto 20vh repeat-x, 
+      url(../img/block3/clowds-middle.png) 50% 50% / auto 120% no-repeat,
+      url(../img/block3/global-bg.png) 0 0 / auto 120% no-repeat,
+    ;
+
+    &__body {
+      padding-top: adap(265, 320);
+      padding-bottom: adap(235, 320);
+    }
+
+    &__title {
+      margin-bottom: adap(100, 320);
+      font-size: adap(38, 320);
+    }
+
+  }
+
+  .block-7-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    
+    &__body {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+    }
+
+    &__line-01 {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      margin: 0;
+
+    }
+
+    &__line-02 {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      margin: 0;
+    }
+
+    &__line-03 {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      margin: 0;
+    }
+
+    &__item-wrapper {
+      margin: 0;
+
+      &::after {
+        font-size: adap(25, 320);
+      }
+
+      &_03 {
+        .block-7-content__item {
+          padding-top: adap(12, 320);
+        }
+      }
+
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1919px) {
+  
+  .block-7 {
+    background:
+      url(../img/block3/clowds-top.png) 0 0% / 40% repeat-x,
+      url(../img/block3/clowds-bottom.png) 0 100% / 40% repeat-x, 
+      url(../img/block7/flag.png) 0 50% / auto 80% no-repeat,
+      url(../img/block3/clowds-middle.png) 50% 50% / 120vw auto no-repeat,
+      url(../img/block3/clowds-right-2.png) 0 100% / auto 100% no-repeat,
+      url(../img/block3/left-shade.png) 0 0 / auto 100% no-repeat,
+      url(../img/block3/clowds-left-2.png) 0 0 / auto 100% no-repeat,
+      url(../img/block3/clowds-left-1.png) 0 0 / auto 100% no-repeat,
+      url(../img/block3/global-bg.png) 0 0 / 120vw auto no-repeat,
+      url(../img/block3/right-shade.png) 100% 100% / auto 100% no-repeat,
+      url(../img/block7/big-ben.png) 100% 100% / auto 40% no-repeat,
+    ;
+
+    &__body {
+      padding-top: qadap(265);
+      padding-bottom: qadap(235);
+      width: qadap(1920);
+      margin: 0 auto;
+    }
+
+    &__title {
+      margin-bottom: qadap(100);
+      font-size: qadap(47);
+    }
+  }
+
+  .block-7-content {
+
+    
+    &__body {
+      width: inherit;
+    }
+
+
+
+    &__line-03 {
+      margin-right: qadap(180);
+      .block-7-content__item-wrapper {
+        margin-left: qadap(42);
+      }
+    }
+
+    &__item-wrapper {
+      margin-left: qadap(40);
+      margin-bottom: qadap(67);
+
+      &::after {
+        font-size: qadap(25);
+      }
+      
+      &_03 {
+        .block-7-content__item {
+          padding-top: qadap(12);
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ================================================================= // 
 // block-6
 
 
@@ -1186,6 +1504,7 @@ a {
 
     &__body {
       padding: adap(95, 320) adap(30, 320) 0;
+      margin-bottom: adap(55, 320);
     }
   
     &__title {
@@ -2402,6 +2721,7 @@ a {
     background:
     url(../img/block1/clowds-bottom-2.png) 0 bottom / auto 10vh repeat-x,
     url(../img/block1/woman-01.png) 95% 0 / auto 100% no-repeat,
+    url(../img/block3/clowds-middle.png) 50% 50% / 120vw auto no-repeat,
     url(../img/block1/clowds-right.png) 100% 0 / auto 100% no-repeat,
     url(../img/block1/clowds-left.png) 0 0 / auto 100% no-repeat,
     url(../img/block1/Tower-Bridge.png) 103% 0 / auto 100% no-repeat,
