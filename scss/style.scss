@@ -1451,147 +1451,6 @@ a {
 // ============================================================= //
 // block-9
 
-@media screen and (max-width: 761px) {
-  .block-9 {
-    background:
-      url(../img/block3/clowds-top.png) 0 0 / auto 20% repeat-x,
-      url(../img/block3/clowds-bottom.png) 0 100% / auto 20% repeat-x,
-      url(../img/block3/clowds-middle.png) 50% 50% / 120vw auto no-repeat,
-      url(../img/block3/global-bg.png) 50% 50% / 120vw 120vh no-repeat,
-    ;
-  
-    &__body {
-      padding-top: adap(180, 320);
-      width: 95% !important;
-      padding-bottom: adap(220, 320);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    &__title {
-      font-size: adap(30, 320);
-    }
-  
-  
-    &__subtitle {
-      font-size: adap(20, 320) !important;
-      margin-bottom: adap(46, 320) !important;
-    }
-  
-  
-    &__form {
-      margin-bottom: adap(70, 320) !important;
-    }
-  
-    &__socials {
-      display: flex;
-      flex-direction: column;
-    }
-  }
-  .block-9-form {
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-  
-    &__input {
-      padding: adap(40, 320) !important;
-      padding-left: adap(90, 320) !important;
-      font-size: adap(25, 320) !important;
-      width: adap(400, 320) !important;
-      height: adap(100, 320) !important;
-      border-radius: adap(50, 320) !important;
-      box-shadow: inset 0 adap(5, 320) adap(5, 320) #fbc9be !important;
-      margin-bottom: adap(40, 320);
-    }
-  
-  
-    &__name {
-      background: url(../img/icons/block-9-icon-01.png) adap(35, 320) adap(26, 320) / adap(38, 320) no-repeat #fdefe4 !important;
-    }
-  
-    &__email {
-      background: url(../img/icons/block-9-icon-02.png) adap(35, 320) adap(30, 320) / adap(40, 320) no-repeat #fdefe4 !important;
-    }
-  
-    &__submit {
-      display: flex;
-      flex-direction: column;
-      & button {
-        font-family: "CenturyGothic";
-        font-size: adap(25, 320) !important;
-        padding: adap(38, 320) !important;
-        border-radius: adap(60, 320) !important;
-        margin-bottom: adap(20, 320) !important;
-      }
-    }
-  
-    &__ya-zaebalsya{
-      display: flex;
-      align-items: center;
-      & span {
-        font-size: adap(17, 320) !important;
-        margin-left: adap(10, 320) !important;
-      }
-    }
-  
-    &__checkbox {
-      font-size: 0;
-      width: adap(18, 320) !important;
-      height: adap(18, 320) !important;
-      border: adap(1, 320) solid #825d53 !important;
-      border-radius: adap(5, 320) !important;
-      & input {
-        position: absolute;
-        width: 140%;
-        height: 140%;
-        top: adap(-2, 320) !important;
-        left: adap(-2, 320) !important;
-      }
-    }
-  }
-  .block-9-socials {
-
-    &_1920 {
-      display: none;
-    }
-  
-    &_761 {
-      text-align: center;
-      display: block !important;
-    }
-  
-    &__number {
-      font-size: adap(47, 320) !important;
-      margin-bottom: adap(20, 320);
-    }
-  
-    &__text {
-      font-size: adap(30, 320) !important;
-      margin-bottom: adap(20, 320);
-    }
-  
-    &__socials {
-      display: flex;
-      justify-content: space-around;
-    }
-  
-    &__item {
-      font-size: 0;
-  
-      &:last-child {
-        margin: 0;
-      }
-      
-      & img {
-        height: adap(35, 320) !important;
-        margin-right: adap(35, 320) !important;
-      }
-    }
-  }
-}
-
-
 
 .block-9 {
   background:
@@ -1760,6 +1619,45 @@ a {
 }
 
 
+// ============================================================ //
+// footer 
+
+.footer {
+  display: flex;
+  font-family: "MuseoSans100";
+  justify-content: space-around;
+  width: adap(1920);
+  text-align: center;
+  font-size: adap(30);
+  align-items: center;
+  padding-bottom: adap(147);
+
+  &__text-01 {
+  }
+
+  &__text-02 {
+  }
+
+  &__text-02 a:hover {
+    color: #a7150e;
+  }
+
+  &__text-03 {
+    font-size: adap(15);
+  }
+
+  &__text-03 a:hover {
+    color: #a7150e;
+  }
+
+  &__name {
+    font-size: adap(47);
+    font-family: "MuseoSans500";
+  }
+
+  &__prof {
+  }
+}
 
 
 
@@ -1838,14 +1736,268 @@ a {
 // ============================================================ //
 
 
+// ============================================================ // 
+// footer
+
+@media screen and (max-width: 761px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 95% !important;
+    margin: 0 auto;
+    text-align: center;
+    font-size: adap(30, 320);
+    align-items: center;
+    padding-bottom: adap(40, 320);
+  
+    &__text-01 {
+      order: 2;
+      margin-bottom: adap(80, 320);
+    }
+  
+    &__text-02 {
+      order: 1;
+      margin-bottom: adap(40, 320);
+    }
+  
+    &__text-03 {
+      order: 3;
+      font-size: adap(15, 320);
+    }
+  
+  
+    &__name {
+      font-size: adap(47, 320);
+    }
+  
+    &__prof {
+    }
+  }  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1919px) {
+  
+  .footer {
+    width: qadap(1920);
+    margin: 0 auto;
+    font-size: qadap(30);
+    padding-bottom: qadap(147);
+
+    &__text-03 {
+      font-size: qadap(15);
+    }
+
+
+    &__name {
+      font-size: qadap(47);
+    }
+
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // ============================================================= //
 // block-9
+
+@media screen and (max-width: 761px) {
+  .block-9 {
+    background:
+      url(../img/block3/clowds-top.png) 0 0 / auto 15% repeat-x,
+      url(../img/block3/clowds-bottom.png) 0 100% / auto 15% repeat-x,
+      url(../img/block3/clowds-middle.png) 50% 50% / 120vw auto no-repeat,
+      url(../img/block3/global-bg.png) 50% 50% / 120vw 120vh no-repeat,
+    ;
+  
+    &__body {
+      padding-top: adap(180, 320);
+      width: 95% !important;
+      padding-bottom: adap(220, 320);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    &__title {
+      font-size: adap(30, 320);
+    }
+  
+  
+    &__subtitle {
+      font-size: adap(20, 320) !important;
+      margin-bottom: adap(46, 320) !important;
+    }
+  
+  
+    &__form {
+      margin-bottom: adap(70, 320) !important;
+    }
+  
+    &__socials {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  .block-9-form {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+  
+    &__input {
+      padding: adap(40, 320) !important;
+      padding-left: adap(90, 320) !important;
+      font-size: adap(25, 320) !important;
+      width: adap(400, 320) !important;
+      height: adap(100, 320) !important;
+      border-radius: adap(50, 320) !important;
+      box-shadow: inset 0 adap(5, 320) adap(5, 320) #fbc9be !important;
+      margin-bottom: adap(40, 320);
+    }
+  
+  
+    &__name {
+      background: url(../img/icons/block-9-icon-01.png) adap(35, 320) adap(26, 320) / adap(38, 320) no-repeat #fdefe4 !important;
+    }
+  
+    &__email {
+      background: url(../img/icons/block-9-icon-02.png) adap(35, 320) adap(30, 320) / adap(40, 320) no-repeat #fdefe4 !important;
+    }
+  
+    &__submit {
+      display: flex;
+      flex-direction: column;
+      & button {
+        font-family: "CenturyGothic";
+        font-size: adap(25, 320) !important;
+        padding: adap(38, 320) !important;
+        border-radius: adap(60, 320) !important;
+        margin-bottom: adap(20, 320) !important;
+      }
+    }
+  
+    &__ya-zaebalsya{
+      display: flex;
+      align-items: center;
+      & span {
+        font-size: adap(17, 320) !important;
+        margin-left: adap(10, 320) !important;
+      }
+    }
+  
+    &__checkbox {
+      font-size: 0;
+      width: adap(18, 320) !important;
+      height: adap(18, 320) !important;
+      border: adap(1, 320) solid #825d53 !important;
+      border-radius: adap(5, 320) !important;
+      & input {
+        position: absolute;
+        width: 140%;
+        height: 140%;
+        top: adap(-2, 320) !important;
+        left: adap(-2, 320) !important;
+      }
+    }
+  }
+  .block-9-socials {
+
+    &_1920 {
+      display: none;
+    }
+  
+    &_761 {
+      text-align: center;
+      display: block !important;
+    }
+  
+    &__number {
+      font-size: adap(47, 320) !important;
+      margin-bottom: adap(20, 320);
+    }
+  
+    &__text {
+      font-size: adap(30, 320) !important;
+      margin-bottom: adap(20, 320);
+    }
+  
+    &__socials {
+      display: flex;
+      justify-content: space-around;
+    }
+  
+    &__item {
+      font-size: 0;
+  
+      &:last-child {
+        margin: 0;
+      }
+      
+      & img {
+        height: adap(35, 320) !important;
+        margin-right: adap(35, 320) !important;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
 
 @media screen and (min-width: 1919px) {
   .block-9 {
     background:
       url(../img/block3/clowds-top.png) 0 0 / auto 20% repeat-x,
-      url(../img/block3/clowds-bottom.png) 0 100% / auto 20% repeat-x,
+      url(../img/block3/clowds-bottom.png) 0 102% / auto 20% repeat-x,
       url(../img/block3/clowds-middle.png) 50% 50% / 120vw auto no-repeat,
       url(../img/block3/global-bg.png) 50% 50% / 120vw 120vh no-repeat,
     ;
@@ -1859,6 +2011,7 @@ a {
 
     &__title {
       font-size: qadap(47);
+      margin-bottom: qadap(53);
     }
 
 

@@ -1,155 +1,30 @@
 @media screen and (min-width: 1919px) {
-  .block-9 {
-    background: url(../img/block3/clowds-top.png) 0 0/auto 20vh repeat-x, url(../img/block3/clowds-bottom.png) 0 100%/auto 20vh repeat-x, url(../img/block3/clowds-middle.png) 50% 50%/120vw auto no-repeat, url(../img/block3/global-bg.png) 50% 50%/120vw 120vh no-repeat;
-  }
-  .block-9__body {
-    padding-top: qadap(180);
-    width: qadap(1530);
-    margin: 0 auto;
-    padding-bottom: qadap(220);
-  }
-  .block-9__subtitle {
-    text-align: center;
-    font-family: "MuseoSans100";
-    font-size: qadap(30);
-    margin-bottom: qadap(56);
-  }
-  .block-9__form {
-    margin-bottom: qadap(70);
-  }
-  .block-9__socials {
+  .footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    font-family: "MuseoSans100";
     -ms-flex-pack: distribute;
         justify-content: space-around;
-  }
-  .block-9-form {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .block-9-form__input {
-    padding: qadap(40);
-    padding-left: qadap(90);
-    font-family: "MuseoSans100";
-    font-size: qadap(25);
-    width: qadap(520);
-    height: qadap(100);
-    border-radius: qadap(50);
-    -webkit-box-shadow: inset 0 qadap(5) qadap(5) #fbc9be;
-            box-shadow: inset 0 qadap(5) qadap(5) #fbc9be;
-  }
-  .block-9-form__name {
-    background: url(../img/icons/block-9-icon-01.png) qadap(35) qadap(26)/qadap(38) no-repeat #fdefe4;
-  }
-  .block-9-form__email {
-    background: url(../img/icons/block-9-icon-02.png) qadap(35) qadap(30)/qadap(40) no-repeat #fdefe4;
-  }
-  .block-9-form__submit {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .block-9-form__submit button {
-    font-family: "CenturyGothic";
-    font-size: qadap(25);
-    color: #fff;
-    background: -webkit-gradient(linear, left bottom, left top, from(rgb(159, 5, 0)), to(rgb(255, 38, 0)));
-    background: linear-gradient(0deg, rgb(159, 5, 0) 0%, rgb(255, 38, 0) 100%);
-    padding: qadap(38);
-    border-radius: qadap(60);
-    -webkit-box-shadow: 0 20px 20px rgba(203, 63, 48, 0.3137254902), inset 0 0 4px 4px #dc3434;
-            box-shadow: 0 20px 20px rgba(203, 63, 48, 0.3137254902), inset 0 0 4px 4px #dc3434;
-    margin-bottom: qadap(40);
-  }
-  .block-9-form__submit button:hover {
-    background: rgb(198, 37, 31);
-    background: -webkit-gradient(linear, left bottom, left top, from(rgb(160, 35, 31)), to(rgb(254, 83, 53)));
-    background: linear-gradient(0deg, rgb(160, 35, 31) 0%, rgb(254, 83, 53) 100%);
-  }
-  .block-9-form__submit button:active {
-    background: rgb(167, 8, 3);
-    background: -webkit-gradient(linear, left bottom, left top, from(rgb(156, 6, 0)), color-stop(0%, rgrgb(156, 23, 0)));
-    background: linear-gradient(0deg, rgb(156, 6, 0) 0%, rgrgb(156, 23, 0) 0%);
-    -webkit-box-shadow: 0 20px 30px rgba(255, 41, 17, 0.7215686275);
-            box-shadow: 0 20px 30px rgba(255, 41, 17, 0.7215686275);
-  }
-  .block-9-form__ya-zaebalsya {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    width: qadap(1920);
+    text-align: center;
+    font-size: qadap(30);
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding-bottom: qadap(147);
   }
-  .block-9-form__ya-zaebalsya span {
-    display: inline-block;
-    font-size: qadap(17);
-    font-family: "MuseoSans100";
-    margin-left: qadap(10);
+  .footer__text-02 a:hover {
+    color: #a7150e;
   }
-  .block-9-form__ya-zaebalsya a {
-    text-decoration: underline;
+  .footer__text-03 {
+    font-size: qadap(15);
   }
-  .block-9-form__ya-zaebalsya a:hover {
-    color: #a8160f;
-    text-decoration: underline;
+  .footer__text-03 a:hover {
+    color: #a7150e;
   }
-  .block-9-form__checkbox {
-    font-size: 0;
-    width: 18px;
-    height: 18px;
-    display: inline-block;
-    border: 1px solid #825d53;
-    overflow: hidden;
-    position: relative;
-    border-radius: 5px;
-  }
-  .block-9-form__checkbox input {
-    position: absolute;
-    width: 120%;
-    height: 120%;
-    top: -2px;
-    left: -2px;
-  }
-  .block-9-socials_761 {
-    display: none;
-  }
-  .block-9-socials__number {
-    font-family: "MuseoSans500";
+  .footer__name {
     font-size: qadap(47);
-  }
-  .block-9-socials__text {
-    font-family: "MuseoSans100";
-    font-size: qadap(30);
-  }
-  .block-9-socials__socials {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
-  .block-9-socials__item {
-    font-size: 0;
-  }
-  .block-9-socials__item:last-child {
-    margin: 0;
-  }
-  .block-9-socials__item img {
-    height: qadap(35);
-    margin-right: qadap(35);
-  }
-  .block-9-socials__item img:hover {
-    -webkit-filter: saturate(5);
-            filter: saturate(5);
+    font-family: "MuseoSans500";
   }
 }/*# sourceMappingURL=test.css.map */
