@@ -608,7 +608,7 @@ a {
   margin-bottom: adap(78);
   background: 
     url(../img/block3/clowds-top.png) 0 -10% / 100% repeat-x,
-    url(../img/block3/clowds-bottom.png) 0 100% / 100% repeat-x,
+    url(../img/block3/clowds-bottom.png) 0 105% / 100% repeat-x,
     url(../img/block3/woman.png) 10% 82% / auto 70%  no-repeat,
     url(../img/block3/left-shade.png) 0 0 / 100% no-repeat,
     url(../img/block3/clowds-middle.png) 50% 0 / 200% no-repeat,
@@ -3771,11 +3771,11 @@ a {
   .block-1 {
     
     background: 
-      url(../img/block1/clowds-bottom-2.png) 0 bottom / auto 10vh repeat-x,
+      url(../img/block3/clowds-bottom.png) 0 bottom / auto 10vh repeat-x,
       url(../img/block1/woman-01.png) 50% 100% / auto 55% no-repeat,
-      url(../img/block3/clowds-middle.png) 50% 50% / auto 100vh no-repeat,
+      url(../img/block3/clowds-middle.png) 50% 50% / auto 120vh no-repeat,
       url(../img/block1/Tower-Bridge.png) 50% 100% / auto 60% no-repeat,
-      url(../img/block1/global-bg.png) 0 0 / 120vw 120vh no-repeat,
+      url(../img/block3/global-bg.png) 0 0 / auto 120vh no-repeat !important
     ;
   
       &__content {
@@ -3986,14 +3986,14 @@ a {
 
   .block-1 {
     background:
-    url(../img/block1/clowds-bottom-2.png) 0 bottom / auto 10vh repeat-x,
+    url(../img/block3/clowds-bottom.png) 0 bottom / auto 10vh repeat-x,
     url(../img/block1/woman-01.png) 95% 0 / auto 100% no-repeat,
-    url(../img/block3/clowds-middle.png) 50% 50% / 120vw auto no-repeat,
-    url(../img/block1/clowds-right.png) 100% 0 / auto 100% no-repeat,
-    url(../img/block1/clowds-left.png) 0 0 / auto 100% no-repeat,
+    url(../img/block3/clowds-middle.png) 50% 50% / 100vw auto no-repeat,
+    url(../img/block3/clowds-right.png) 100% 0 / auto 100% no-repeat,
+    url(../img/block3/clowds-left.png) 0 0 / auto 100% no-repeat,
     url(../img/block1/Tower-Bridge.png) 103% 0 / auto 100% no-repeat,
     url(../img/block1/big-ben.png) 100% 0 / auto 100% no-repeat,
-    url(../img/block1/global-bg.png) 0 0 / 100vw repeat-x,
+    url(../img/block3/global-bg.png) 0 0 / 100vw repeat-x,
     ;
   
     &__wrapper {
