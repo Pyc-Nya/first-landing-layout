@@ -1,105 +1,166 @@
 @media screen and (min-width: 1919px) {
   
-  .block-7 {
-    background:
-      url(../img/block3/clowds-top.png) 0 0% / 100% repeat-x,
-      url(../img/block3/clowds-bottom.png) 0 100% / 100% repeat-x, 
-      url(../img/block7/flag.png) 0 50% / auto 80% no-repeat,
-      url(../img/block3/clowds-middle.png) 50% 50% / 120vw auto no-repeat,
-      url(../img/block3/clowds-right-2.png) 0 100% / auto 100% no-repeat,
-      url(../img/block3/clowds-right-1.png) 0 100% / auto 100% no-repeat,
-      url(../img/block3/left-shade.png) 0 0 / auto 100% no-repeat,
-      url(../img/block3/clowds-left-2.png) 0 0 / auto 100% no-repeat,
-      url(../img/block3/clowds-left-1.png) 0 0 / auto 100% no-repeat,
-      url(../img/block3/global-bg.png) 0 0 / 120vw auto no-repeat,
-      url(../img/block3/right-shade.png) 100% 100% / auto 100% no-repeat,
-      url(../img/block7/big-ben.png) 110% 110% / auto 40% no-repeat,
-    ;
+  .block-8 {
 
     &__body {
-      padding-top: qadap(265);
-      padding-bottom: qadap(235);
-    }
-
-    &__title {
+      width: qadap(1534);
+      margin: 0 auto;
       margin-bottom: qadap(100);
     }
 
+    &__title {
+      margin-bottom: qadap(80);
+    }
+
     &__content {
+      display: flex;
     }
   }
-
-  .block-7-content {
-
-    
-    &__body {
-      text-align: center;
-      width: qadap(1512);
-      margin: 0 auto;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-    }
-
-    &__line-01 {
-      display: flex;
-
-      .block-7-content__item-wrapper:first-child {
-        margin-left: 0;
-      }
-    }
-
-    &__line-02 {
-      display: flex;
-      .block-7-content__item-wrapper:first-child {
-        margin-left: 0;
-      }
-    }
-
-    &__line-03 {
-      display: flex;
-      margin-right: qadap(180);
-      .block-7-content__item-wrapper:first-child {
-        margin-left: 0;
-      }
-      .block-7-content__item-wrapper {
-        margin-left: qadap(42);
-        margin-bottom: 0;
-      }
-    }
+  .block-8-content {
 
     &__item-wrapper {
-      margin: 0;
-      margin-left: qadap(118);
-      margin-bottom: qadap(67);
-
-      &::after {
-        font-family: "MuseoSans100";
-        font-size: qadap(25);
-        color: white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 50%;
+      margin-right: qadap(8);
+      &:last-child {
+        margin: 0;
       }
-      
-      &_03 {
-        .block-7-content__item {
-          padding-top: qadap(12);
+      &:first-child {
+        margin-top: qadap(220);
+        margin-right: qadap(49);
+      }
+      &:not(:first-child):hover {
+        .block-8-content__image {
+          filter: hue-rotate(-20deg) saturate(7);
         }
       }
-
     }
 
     &__item {
+      position: relative;
+
+      &_01 {
+      }
+    }
+
+    &__image {
+      width: qadap(376);
     }
 
     &__title {
+      position: absolute;
+      color: #9e0e0c;
+      font-family: "MuseoSans700";
+      font-size: qadap(30);
+      top: qadap(70);
+      left: qadap(166);
+
+      &_02 {
+        top: qadap(70);
+        left: qadap(120);
+      }
+
+      &_03 {
+        top: qadap(70);
+        left: qadap(132);
+      }
+
     }
 
     &__text {
+      text-align: center;
+      position: absolute;
+      font-family: "MuseoSans100";
+      font-size: qadap(20);
+      top: qadap(128);
+      left: qadap(63);
 
+      &_02 {
+        top: qadap(128);
+        left: qadap(100);
+      }
+
+      &_03 {
+        top: qadap(128);
+        left: qadap(100);
+      }
+
+    }
+    
+    &__list {
+      text-align: center;
+      position: absolute;
+      top: qadap(48);
+      left: qadap(30);
+      font-size: qadap(20);
+      font-family: "MuseoSans300";
+    }
+
+    &__list-icons {
+      position: absolute;
+      text-align: center;
+      top: qadap(255);
+      left: qadap(170);
+    }
+
+    &__button {
+      position: absolute;
+      top: qadap(770);
+      left: qadap(30);
+
+      & a {
+        padding: qadap(28) qadap(53);
+        display: inline-block;
+        text-align: center;
+      }
+    }
+
+    &__price {
+      position: absolute;
+      font-size: qadap(30);
+      font-family: "MuseoSans300";
+      text-align: center;
+      top: qadap(809);
+      left: qadap(139);
+    }
+
+    &__note {
+      position: absolute;
+      font-size: qadap(14);
+      font-family: "MuseoSans300";
+      text-align: center;
+      top: qadap(500);
+      left: qadap(84)
     }
   }
 
+  .block-8-content-list {
+
+    &__item {
+      margin-bottom: qadap(40);
+      &:last-child {
+        margin: 0;
+      }
+    }
+
+  }
+
+  .block-8-content-list-icons {
+
+    &__item {
+      margin-bottom: qadap(25);
+      &:last-child {
+        margin: 0;
+      }
+
+
+      & img {
+        width: qadap(40);
+      }
+
+      &_locked {
+        & img {
+          width: 70%;
+        }
+      }
+    }
+  }
 }

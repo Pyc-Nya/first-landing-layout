@@ -1117,6 +1117,8 @@ a {
     url(../img/block7/big-ben.png) 110% 110% / auto 40% no-repeat,
   ;
 
+  margin-bottom: adap(82);
+
   &__body {
     padding-top: adap(265);
     padding-bottom: adap(235);
@@ -1253,6 +1255,192 @@ a {
 
 
 
+// =============================================================== // 
+// block-8
+
+.block-8 {
+
+  &__body {
+    width: adap(1534);
+    margin: 0 auto;
+    margin-bottom: adap(100);
+  }
+
+  &__title {
+    margin-bottom: adap(80);
+  }
+
+  &__content {
+    display: flex;
+  }
+}
+.block-8-content {
+
+  &__item-wrapper {
+    margin-right: adap(8);
+    &:last-child {
+      margin: 0;
+    }
+    &:first-child {
+      margin-top: adap(220);
+      margin-right: adap(49);
+    }
+    &:not(:first-child):hover {
+      .block-8-content__image {
+        filter: hue-rotate(-20deg) saturate(7);
+      }
+    }
+  }
+
+  &__item {
+    position: relative;
+
+    &_01 {
+    }
+  }
+
+  &__image {
+    width: adap(376);
+  }
+
+  &__title {
+    position: absolute;
+    color: #9e0e0c;
+    font-family: "MuseoSans700";
+    font-size: adap(30);
+    top: adap(70);
+    left: adap(166);
+
+    &_02 {
+      top: adap(70);
+      left: adap(120);
+    }
+
+    &_03 {
+      top: adap(70);
+      left: adap(132);
+    }
+
+  }
+
+  &__text {
+    text-align: center;
+    position: absolute;
+    font-family: "MuseoSans100";
+    font-size: adap(20);
+    top: adap(128);
+    left: adap(63);
+
+    &_02 {
+      top: adap(128);
+      left: adap(100);
+    }
+
+    &_03 {
+      top: adap(128);
+      left: adap(100);
+    }
+
+  }
+  
+  &__list {
+    text-align: center;
+    position: absolute;
+    top: adap(48);
+    left: adap(30);
+    font-size: adap(20);
+    font-family: "MuseoSans300";
+  }
+
+  &__list-icons {
+    position: absolute;
+    text-align: center;
+    top: adap(255);
+    left: adap(170);
+  }
+
+  &__button {
+    position: absolute;
+    top: adap(770);
+    left: adap(30);
+
+    & a {
+      padding: adap(28) adap(53);
+      display: inline-block;
+      text-align: center;
+    }
+  }
+
+  &__price {
+    position: absolute;
+    font-size: adap(30);
+    font-family: "MuseoSans300";
+    text-align: center;
+    top: adap(809);
+    left: adap(139);
+  }
+
+  &__note {
+    position: absolute;
+    font-size: adap(14);
+    font-family: "MuseoSans300";
+    text-align: center;
+    top: adap(500);
+    left: adap(84)
+  }
+}
+
+.block-8-content-list {
+
+  &__item {
+    margin-bottom: adap(40);
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+}
+
+.block-8-content-list-icons {
+
+  &__item {
+    margin-bottom: adap(25) ;
+    border-radius: 50%;
+    overflow: hidden;
+
+    &:last-child {
+      margin: 0;
+    }
+
+    & img {
+      width: adap(40);
+    }
+
+    &_locked {
+      border-radius: 0;
+
+      & img {
+        width: adap(32) ;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1316,6 +1504,393 @@ a {
 // ============================================================ //
 
 
+// =============================================================== // 
+// block-8
+
+
+@media screen and (max-width: 761px) {
+  
+  .block-8 {
+
+    &__body {
+      width: inherit;
+      margin-bottom: adap(100, 320);
+    }
+
+    &__title {
+      margin-bottom: adap(80, 320);
+      font-size: adap(38, 320);
+    }
+
+    &__content {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  .block-8-content {
+
+    &__item-wrapper {
+      margin: 0;
+      margin-bottom: adap(70, 320);
+
+      &:first-child {
+        display: none;
+      }
+
+      &:last-child {
+        margin: 0;
+      }
+    }
+
+    &__item {
+      position: relative;
+      &_1920 {
+        display: none;
+      }
+    }
+
+    &__image {
+      width: adap(450, 320);
+      height: adap(880, 320);
+
+      &_02 {
+        height: adap(780, 320);
+      }
+
+      &_03 {
+        height: adap(650, 320);
+      }
+    }
+
+    &__title {
+      font-size: adap(30, 320);
+      top: adap(70, 320);
+      left: adap(200, 320);
+
+      &_02 {
+        top: adap(70, 320);
+        left: adap(150, 320);
+      }
+
+      &_03 {
+        top: adap(50, 320);
+        left: adap(160, 320);
+      }
+
+    }
+
+    &__text {
+      font-size: adap(20, 320);
+      top: adap(120, 320);
+      left: adap(100, 320);
+
+      &_02 {
+        top: adap(128, 320);
+        left: adap(130, 320);
+      }
+
+      &_03 {
+        top: adap(100, 320);
+        left: adap(125, 320);
+      }
+
+    }
+
+    &__list-icons {
+      top: adap(260, 320);
+      left: adap(75, 320);
+
+      &_02 {
+        top: adap(230, 320);
+        left: adap(75, 320);
+      }
+
+      &_03 {
+        top: adap(220, 320);
+        left: adap(75, 320);
+      }
+
+    }
+
+
+    &__price {
+      font-size: adap(30, 320);
+      top: adap(740, 320);
+      left: adap(160, 320);
+      
+      &_02 {
+        top: adap(650, 320);
+      }
+
+      &_03 {
+        top: adap(540, 320);
+      }
+
+    }
+
+    &__button {
+      top: adap(300, 320);
+      left: adap(70, 320);
+
+      & a {
+        font-size: adap(24, 320);
+        padding: adap(28, 320) adap(48, 320) !important;
+      }
+
+      &_02 {
+        top: adap(220, 320);
+      }
+
+      &_03 {
+        top: adap(100, 320);
+      }
+
+    }
+
+    &__note {
+      font-size: adap(16, 320);
+      top: adap(410, 320);
+      left: adap(50, 320)
+    }
+  }
+
+  .block-8-content-list {
+
+    &__item {
+      margin-bottom: adap(40, 320);
+      &:last-child {
+        margin: 0;
+      }
+    }
+
+  }
+
+  .block-8-content-list-icons {
+    font-size: adap(20, 320);
+    font-family: "MuseoSans300";
+
+    &__item {
+      margin-bottom: adap(35, 320);
+      border-radius: 0;
+
+      &:last-child {
+        margin: 0;
+      }
+
+      & img {
+        width: adap(40, 320);
+      }
+
+      &_locked {
+        border-radius: 0;
+
+        & img {
+          width: 70%;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1919px) {
+  
+  .block-8 {
+
+    &__body {
+      width: qadap(1534);
+      margin: 0 auto;
+      margin-bottom: qadap(100);
+    }
+
+    &__title {
+      margin-bottom: qadap(80);
+      font-size: qadap(47);
+    }
+
+  }
+  .block-8-content {
+
+    &__item-wrapper {
+      margin-right: qadap(8);
+      &:first-child {
+        margin-top: qadap(220);
+        margin-right: qadap(49);
+      }
+      &:not(:first-child):hover {
+        .block-8-content__image {
+          filter: hue-rotate(-20deg) saturate(7);
+        }
+      }
+    }
+
+    &__item {
+
+      &_01 {
+      }
+    }
+
+    &__image {
+      width: qadap(376);
+    }
+
+    &__title {
+      font-size: qadap(30);
+      top: qadap(70);
+      left: qadap(166);
+
+      &_02 {
+        top: qadap(70);
+        left: qadap(120);
+      }
+
+      &_03 {
+        top: qadap(70);
+        left: qadap(132);
+      }
+
+    }
+
+    &__text {
+      font-size: qadap(20);
+      top: qadap(128);
+      left: qadap(63);
+
+      &_02 {
+        top: qadap(128);
+        left: qadap(100);
+      }
+
+      &_03 {
+        top: qadap(128);
+        left: qadap(100);
+      }
+
+    }
+    
+    &__list {
+      top: qadap(48);
+      left: qadap(30);
+      font-size: qadap(20);
+    }
+
+    &__list-icons {
+      top: qadap(255);
+      left: qadap(170);
+    }
+
+    &__button {
+      top: qadap(770);
+      left: qadap(30);
+
+      & a {
+        padding: qadap(28) qadap(53) !important;
+      }
+    }
+
+    &__price {
+      font-size: qadap(30);
+      top: qadap(809);
+      left: qadap(139);
+    }
+
+    &__note {
+      font-size: qadap(14);
+      top: qadap(500);
+      left: qadap(84)
+    }
+  }
+
+  .block-8-content-list {
+
+    &__item {
+      margin-bottom: qadap(40);
+    }
+
+  }
+
+  .block-8-content-list-icons {
+
+    &__item {
+      margin-bottom: qadap(25);
+
+
+      & img {
+        width: qadap(40);
+      }
+
+      &_locked {
+        & img {
+          width: qadap(32);
+        }
+      }
+
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 762px) {
+
+  .block-8-content__item_761 {
+    display: none;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // ================================================================= // 
 // block-7
 
@@ -1328,6 +1903,8 @@ a {
       url(../img/block3/clowds-middle.png) 50% 50% / auto 120% no-repeat,
       url(../img/block3/global-bg.png) 0 0 / auto 120% no-repeat,
     ;
+
+    margin-bottom: adap(82, 320);
 
     &__body {
       padding-top: adap(265, 320);
@@ -1427,6 +2004,8 @@ a {
       url(../img/block3/right-shade.png) 100% 100% / auto 100% no-repeat,
       url(../img/block7/big-ben.png) 100% 100% / auto 40% no-repeat,
     ;
+
+    margin-bottom: qadap(82);
 
     &__body {
       padding-top: qadap(265);
@@ -2742,6 +3321,9 @@ a {
   
   
   .header-name {
+
+    // padding-top: qadap(15);
+    // padding-left: qadap(181);
   
       &__items {
         padding-top: 15px;
