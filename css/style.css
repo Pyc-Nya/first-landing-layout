@@ -1931,6 +1931,8 @@ a {
   .block-7__body {
     padding-top: calc(165.625px + 99.375 * (100vw - 320px) / 1600);
     padding-bottom: calc(146.875px + 88.125 * (100vw - 320px) / 1600);
+    width: 95%;
+    margin: 0 auto;
   }
   .block-7__title {
     margin-bottom: calc(62.5px + 37.5 * (100vw - 320px) / 1600);
