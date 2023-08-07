@@ -1,166 +1,168 @@
 @media screen and (min-width: 1919px) {
-  
-  .block-8 {
+  .block-9 {
+    background:
+      url(../img/block3/clowds-top.png) 0 0 / auto 20vh repeat-x,
+      url(../img/block3/clowds-bottom.png) 0 100% / auto 20vh repeat-x,
+      url(../img/block3/clowds-middle.png) 50% 50% / 120vw auto no-repeat,
+      url(../img/block3/global-bg.png) 50% 50% / 120vw 120vh no-repeat,
+    ;
 
     &__body {
-      width: qadap(1534);
+      padding-top: qadap(180);
+      width: qadap(1530);
       margin: 0 auto;
-      margin-bottom: qadap(100);
+      padding-bottom: qadap(220);
     }
 
     &__title {
-      margin-bottom: qadap(80);
     }
 
-    &__content {
+
+    &__subtitle {
+      text-align: center;
+      font-family: "MuseoSans100";
+      font-size: qadap(30);
+      margin-bottom: qadap(56);
+    }
+
+
+    &__form {
+      margin-bottom: qadap(70);
+    }
+
+    &__socials {
       display: flex;
+      justify-content: space-around;
     }
   }
-  .block-8-content {
+  .block-9-form {
+    display: flex;
+    justify-content: space-between;
 
-    &__item-wrapper {
-      margin-right: qadap(8);
-      &:last-child {
-        margin: 0;
-      }
-      &:first-child {
-        margin-top: qadap(220);
-        margin-right: qadap(49);
-      }
-      &:not(:first-child):hover {
-        .block-8-content__image {
-          filter: hue-rotate(-20deg) saturate(7);
+    &__input {
+      padding: qadap(40);
+      padding-left: qadap(90);
+      font-family: "MuseoSans100";
+      font-size: qadap(25);
+      width: qadap(520);
+      height: qadap(100);
+      border-radius: qadap(50);
+      box-shadow: inset 0 qadap(5) qadap(5) #fbc9be;
+    }
+
+
+    &__name {
+      background: url(../img/icons/block-9-icon-01.png) qadap(35) qadap(26) / qadap(38) no-repeat #fdefe4;
+    }
+
+    &__email {
+      background: url(../img/icons/block-9-icon-02.png) qadap(35) qadap(30) / qadap(40) no-repeat #fdefe4;
+    }
+
+    &__submit {
+      display: flex;
+      flex-direction: column;
+      & button {
+        font-family: "CenturyGothic";
+        font-size: qadap(25);
+        color: #fff;
+        background: linear-gradient(0deg, rgb(159, 5, 0) 0%, rgb(255, 38, 0) 100%);
+        padding: qadap(38);
+        border-radius: qadap(60);
+        box-shadow: 0 20px 20px #cb3f3050, inset 0 0 4px 4px #dc3434;
+        margin-bottom: qadap(40);
+
+        &:hover {
+          background: rgb(198, 37, 31);
+          background: linear-gradient(0deg, rgb(160, 35, 31) 0%, rgb(254, 83, 53) 100%);
+        }
+        &:active {
+          background: rgb(167, 8, 3);
+          background: linear-gradient(0deg, rgb(156, 6, 0) 0%, rgrgb(156, 23, 0)00%);
+          box-shadow: 0 20px 30px #ff2911b8;
         }
       }
     }
 
-    &__item {
+    &__ya-zaebalsya{
+      display: flex;
+      align-items: center;
+      & span {
+        display: inline-block;
+        font-size: qadap(17);
+        font-family: "MuseoSans100";
+        margin-left: qadap(10);
+      }
+
+      & a {
+        text-decoration: underline;
+      }
+
+      & a:hover {
+        color: #a8160f;
+        text-decoration: underline;
+      }
+    }
+
+    &__checkbox {
+      font-size: 0;
+      width: 18px;
+      height: 18px;
+      display: inline-block;
+      border: 1px solid #825d53;
+      overflow: hidden;
       position: relative;
-
-      &_01 {
+      // display: flex;
+      // align-items: center;
+      // justify-content: center;
+      border-radius: 5px;
+      & input {
+        position: absolute;
+        width: 120%;
+        height: 120%;
+        top: -2px;
+        left: -2px;
       }
     }
+  }
+  .block-9-socials {
 
-    &__image {
-      width: qadap(376);
+    &_761 {
+      display: none;
     }
 
-    &__title {
-      position: absolute;
-      color: #9e0e0c;
-      font-family: "MuseoSans700";
-      font-size: qadap(30);
-      top: qadap(70);
-      left: qadap(166);
-
-      &_02 {
-        top: qadap(70);
-        left: qadap(120);
-      }
-
-      &_03 {
-        top: qadap(70);
-        left: qadap(132);
-      }
-
+    &__number {
+      font-family: "MuseoSans500";
+      font-size: qadap(47);
     }
 
     &__text {
-      text-align: center;
-      position: absolute;
       font-family: "MuseoSans100";
-      font-size: qadap(20);
-      top: qadap(128);
-      left: qadap(63);
-
-      &_02 {
-        top: qadap(128);
-        left: qadap(100);
-      }
-
-      &_03 {
-        top: qadap(128);
-        left: qadap(100);
-      }
-
-    }
-    
-    &__list {
-      text-align: center;
-      position: absolute;
-      top: qadap(48);
-      left: qadap(30);
-      font-size: qadap(20);
-      font-family: "MuseoSans300";
-    }
-
-    &__list-icons {
-      position: absolute;
-      text-align: center;
-      top: qadap(255);
-      left: qadap(170);
-    }
-
-    &__button {
-      position: absolute;
-      top: qadap(770);
-      left: qadap(30);
-
-      & a {
-        padding: qadap(28) qadap(53);
-        display: inline-block;
-        text-align: center;
-      }
-    }
-
-    &__price {
-      position: absolute;
       font-size: qadap(30);
-      font-family: "MuseoSans300";
-      text-align: center;
-      top: qadap(809);
-      left: qadap(139);
     }
 
-    &__note {
-      position: absolute;
-      font-size: qadap(14);
-      font-family: "MuseoSans300";
-      text-align: center;
-      top: qadap(500);
-      left: qadap(84)
+    &__socials {
+      display: flex;
+      justify-content: space-around;
     }
-  }
-
-  .block-8-content-list {
 
     &__item {
-      margin-bottom: qadap(40);
+      font-size: 0;
+
       &:last-child {
         margin: 0;
       }
-    }
-
-  }
-
-  .block-8-content-list-icons {
-
-    &__item {
-      margin-bottom: qadap(25);
-      &:last-child {
-        margin: 0;
-      }
-
-
+      
       & img {
-        width: qadap(40);
-      }
-
-      &_locked {
-        & img {
-          width: 70%;
+        height: qadap(35);
+        margin-right: qadap(35);
+        
+        &:hover {
+          filter: saturate(5);
         }
       }
+
     }
   }
+
 }
